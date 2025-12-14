@@ -38,7 +38,12 @@ public class AwardClaimController {
         Long userIdLong = Long.parseLong(userId);
 
         CompletableFuture<ResponseResult> cf = CompletableFuture.supplyAsync(() -> {
-            ResponseResult userLevel = userClient.getUserLevel(userIdLong);
+            ResponseResult userLevel = null;
+            try {
+                userLevel = userClient.getUserLevel(userIdLong);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println(userLevel.getData());
             return userLevel;
         });

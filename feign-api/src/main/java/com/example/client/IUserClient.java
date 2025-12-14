@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "user-service")
 public interface IUserClient {
     @GetMapping("/api/user/v1/user-level/{userId}")
-    public  ResponseResult getUserLevel(@PathVariable("userId") Long userId);
+    public  ResponseResult getUserLevel(@PathVariable("userId") Long userId) throws InterruptedException;
 }
 
 

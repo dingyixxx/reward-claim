@@ -40,9 +40,10 @@ public class UserController implements IUserClient {
 
     @Override
     @GetMapping("/user-level/{userId}")
-    public  ResponseResult getUserLevel(@PathVariable Long userId) {
+    public  ResponseResult getUserLevel(@PathVariable Long userId) throws InterruptedException {
         // 根据用户ID查询用户等级的业务逻辑
         Integer userLevel = queryUserLevelById(userId);
+//        Thread.sleep(5000);
         ResponseResult result = ResponseResult.okResult(userLevel);
         return result;
     }
