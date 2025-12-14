@@ -40,7 +40,6 @@ public class AwardClaimController {
             return userLevel;
         });
 
-
-        return cf.get().getData().toString();
+        return cf.get().getData().toString()+"-"+rewardClaimSuccessMessage;
     }
 }

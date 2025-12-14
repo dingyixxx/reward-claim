@@ -5,8 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/award-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/example/client/IOrderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/example/OrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/example/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service/src/main/java/com/example/controller/AwardClaimController.java" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/src/main/java/com/example/controller/AwardClaimController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service/target/classes/com/example/controller/AwardClaimController.class" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/target/classes/com/example/controller/AwardClaimController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/example/entity/HttpCodeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/example/entity/ResponseResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-api/target/classes/com/example/client/IUserClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/example/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/example/entity/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/entity/LoginDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/org/example/UserApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/org/example/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/org/example/entity/LoginDto.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/P72/Desktop/reward-claim/user-service/src/main/resources",
+    "last_opened_file_path": "C:/Users/P72/Desktop/reward-claim/orders-service/orders-service.iml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,8 +86,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15234375",
     "project.structure.side.proportion": "0.4083045",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "b6599805dae9a9892e04742462256eb7",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "spring.configuration.checksum": "2008f486ac5ecd53b5614342346103bc",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -81,10 +101,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\P72\Desktop\reward-claim\orders-service\src\main\resources" />
+      <recent name="C:\Users\P72\Desktop\reward-claim\order-service\src\main\resources" />
       <recent name="C:\Users\P72\Desktop\reward-claim\user-service\src\main\resources" />
       <recent name="C:\Users\P72\Desktop\reward-claim\award-service\src\main\java\com\example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example" />
+      <recent name="com.example.client" />
       <recent name="org.example.entity" />
       <recent name="org.example.controller" />
     </key>
@@ -101,7 +125,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AwardServiceApplication">
+  <component name="RunManager" selected="Spring Boot.UserApplication-51604-weight3">
     <configuration name="AwardServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="award-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.AwardServiceApplication" />
@@ -131,7 +155,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Spring Boot.UserApplication" />
       <item itemvalue="Spring Boot.UserApplication-51603-weight1" />
       <item itemvalue="Spring Boot.UserApplication-51604-weight3" />
       <item itemvalue="Spring Boot.AwardServiceApplication" />
@@ -139,8 +171,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AwardServiceApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.AwardServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +187,10 @@
       <workItem from="1765602589441" duration="1541000" />
       <workItem from="1765604138521" duration="7789000" />
       <workItem from="1765622710932" duration="569000" />
-      <workItem from="1765623305325" duration="17286000" />
+      <workItem from="1765623305325" duration="18250000" />
+      <workItem from="1765697011448" duration="152000" />
+      <workItem from="1765697186474" duration="1303000" />
+      <workItem from="1765698501723" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>
@@ -171,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1765695834868</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <created>1765696327295</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765696327295</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
