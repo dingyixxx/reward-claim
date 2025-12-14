@@ -41,10 +41,10 @@ public class UserController implements IUserClient {
 
     @Override
     @GetMapping("/user-level/{userId}")
-    public Mono<ResponseResult> getUserLevel(@PathVariable Long userId) {
+    public  ResponseResult getUserLevel(@PathVariable Long userId) {
         // 根据用户ID查询用户等级的业务逻辑
         Integer userLevel = queryUserLevelById(userId);
         ResponseResult result = ResponseResult.okResult(userLevel);
-        return Mono.just(result);
+        return result;
     }
 }

@@ -34,10 +34,10 @@ spring:
             - Path=/api/user/**
             - Method=POST, GET
 
-    sentinel:
-      transport:
-        dashboard: localhost:8080
-        port: 8719
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8080
+#        port: 8719
 
 logging:
   level:

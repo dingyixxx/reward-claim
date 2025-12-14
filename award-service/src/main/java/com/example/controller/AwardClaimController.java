@@ -11,18 +11,18 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.Mono;
+
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 
 @RestController
 @RefreshScope
 @AllArgsConstructor
-@NoArgsConstructor
 @Slf4j
 public class AwardClaimController {
-
+    public AwardClaimController() {}
     @Autowired
     private IUserClient userClient;
-
 
     @Value("${reward.claim.success.message:aaaa}")
     public String rewardClaimSuccessMessage;
@@ -30,20 +30,17 @@ public class AwardClaimController {
 
 
     @PostMapping("/api/rewards/claim")
-    public Mono<String> claimReward(@RequestHeader("userId") String userId) {
+    public String claimReward(@RequestHeader("userId") String userId) throws ExecutionException, InterruptedException {
         log.info("用户id：{}", userId);
         Long userIdLong = Long.parseLong(userId);
 
-//        从请求的headers中获取userId
+        CompletableFuture<ResponseResult> cf = CompletableFuture.supplyAsync(() -> {
+            ResponseResult userLevel = userClient.getUserLevel(userIdLong);
+            System.out.println(userLevel.getData());
+            return userLevel;
+        });
 
 
-
-        return userClient.getUserLevel(userIdLong)
-                .doOnNext(userLevel -> {
-                    log.info("用户等级：{}", userLevel);
-                    Object data = userLevel.getData();
-                })
-                .thenReturn(rewardClaimSuccessMessage);
-
+        return cf.get().getData().toString();
     }
 }
