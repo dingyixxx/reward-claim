@@ -16,7 +16,7 @@
         <module>feign-api</module>
         <module>user-service</module>
         <module>common</module>
-        <module>order2-service</module>
+        <module>order-service</module>
     </modules>
 
 

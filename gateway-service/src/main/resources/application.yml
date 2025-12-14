@@ -33,6 +33,10 @@ spring:
           predicates:
             - Path=/api/user/**
             - Method=POST, GET
+        - id: order-service
+          uri: lb://order-service
+          predicates:
+            - Path=/api/order/**
 
 #    sentinel:
 #      transport:

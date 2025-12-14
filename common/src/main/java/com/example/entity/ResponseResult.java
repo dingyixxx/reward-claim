@@ -1,7 +1,5 @@
 package com.example.entity;
 
-import com.alibaba.fastjson.JSON;
-
 import java.io.Serializable;
 
 /**

@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 
-@FeignClient(name = "orders-service")
+@FeignClient(name = "order-service")
 public interface IOrderClient {
     @GetMapping("/api/order/v1/get-order-count/{userId}")
-    public  ResponseResult getOrderCount(@PathVariable("userId") Long userId);
+    public  ResponseResult getOrderCount(@PathVariable("userId") Long userId) throws InterruptedException;
 }
 
 
