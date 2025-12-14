@@ -1,0 +1,30 @@
+server:
+  port: 51603
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_claim_rewards?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.200.131:8848
+      config:
+        server-addr: 192.168.200.131:8848
+        import-check:
+          enabled: false
+
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8080
+#        port: 8719
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
