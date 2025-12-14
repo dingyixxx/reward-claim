@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+    <output url="file://$MODULE_DIR$/common/target/classes" />
+    <output-test url="file://$MODULE_DIR$/common/target/test-classes" />
+    <content url="file://$MODULE_DIR$/common">
+      <sourceFolder url="file://$MODULE_DIR$/common/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/common/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/common/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/common/target" />
+    </content>
+    <orderEntry type="jdk" jdkName="17" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:2.0.40" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.fastjson2:fastjson2-extension:2.0.40" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.fastjson2:fastjson2:2.0.40" level="project" />
+  </component>
+</module>
