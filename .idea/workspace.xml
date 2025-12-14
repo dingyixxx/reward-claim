@@ -5,28 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/example/client/IOrderClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/example/OrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/example/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order2-service/order2-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_cloud_spring_cloud_alibaba_sentinel_datasource_2022_0_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_cloud_spring_cloud_circuitbreaker_sentinel_2022_0_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_cloud_spring_cloud_starter_alibaba_sentinel_2022_0_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_annotation_aspectj_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_cluster_client_default_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_cluster_common_default_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_cluster_server_default_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_core_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_datasource_extension_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_parameter_flow_control_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_reactor_adapter_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_spring_webflux_adapter_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_spring_webmvc_6x_adapter_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_transport_common_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_transport_simple_http_1_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_concurrentlinkedhashmap_concurrentlinkedhashmap_lru_1_4_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/src/main/java/com/example/controller/AwardClaimController.java" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/src/main/java/com/example/controller/AwardClaimController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/target/classes/com/example/controller/AwardClaimController.class" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/target/classes/com/example/controller/AwardClaimController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/example/entity/HttpCodeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/example/entity/ResponseResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-api/target/classes/com/example/client/IUserClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/example/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/org/example/entity/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/entity/LoginDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/org/example/UserApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/org/example/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/org/example/entity/LoginDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/award-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service/target/classes/com/example/AwardServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service/target/classes/com/example/controller/AwardClaimController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/feign-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/com/example/AppJwtUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/com/example/AuthorizeFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/com/example/GatewayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/UserApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +54,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -75,6 +87,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/P72/Desktop/reward-claim/orders-service/orders-service.iml",
@@ -125,7 +138,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication-51604-weight3">
+  <component name="RunManager" selected="Spring Boot.AwardServiceApplication">
     <configuration name="AwardServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="award-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.AwardServiceApplication" />
@@ -140,22 +153,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication-51603-weight1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
+    <configuration name="UserApplication -weight3 51604" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
       <module name="user-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.UserApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserApplication-51604-weight3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
-      <module name="user-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.UserApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.UserApplication" />
       <option name="VM_PARAMETERS" value="-Dserver.port=51604" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="UserApplication-51603" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="user-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.UserApplication" />
       <method v="2">
@@ -163,16 +169,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.UserApplication" />
-      <item itemvalue="Spring Boot.UserApplication-51603-weight1" />
-      <item itemvalue="Spring Boot.UserApplication-51604-weight3" />
+      <item itemvalue="Spring Boot.UserApplication -weight3 51604" />
+      <item itemvalue="Spring Boot.UserApplication-51603" />
       <item itemvalue="Spring Boot.AwardServiceApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.AwardServiceApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -233,5 +238,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/reward_claim$UserApplication_51603_weight1.ic" NAME="UserApplication-51603-weight1 Coverage Results" MODIFIED="1765703873972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

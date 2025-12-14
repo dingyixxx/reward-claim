@@ -64,6 +64,11 @@
             <groupId>io.r2dbc</groupId>
             <artifactId>r2dbc-spi</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>gateway-service</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 
 
 
@@ -84,10 +89,10 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-web</artifactId>-->
+<!--        </dependency>-->
 
         <!-- JWT Support -->
         <dependency>
@@ -108,12 +113,7 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>gateway-service</artifactId>
-            <version>1.0.0</version>
-            <scope>compile</scope>
-        </dependency>
+
     </dependencies>
 
     <build>
