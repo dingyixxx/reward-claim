@@ -2,7 +2,7 @@
 http://192.168.200.131:8848/
 为自己的windows电脑NAT模式vmware安装centOS固定ip的虚拟机
 nacos版本为2, 采用了服务发现, 负载均衡和配置中心
-
+![img_5.png](img_5.png)
 
 
 1.登录
@@ -31,7 +31,8 @@ qps100
 但jmeter导出的表格,每秒请求最多成功50个,是sentinel设置的qps的100个的一半:
 ![img_2.png](img_2.png)
 
-熔断降级测试(熔断规则,按照 异常数 熔断, 熔断1秒, 最小请求数 6个, 统计时长100ms)
+熔断降级测试(熔断规则,按照 异常数 熔断, 熔断1秒, 最小请求数 6个, 统计时长1000ms)
+
 如果拦截到了DegradeException.class
 ![img_3.png](img_3.png)
 
@@ -80,7 +81,7 @@ DNS1="192.168.22.2"
 4.order-service
 
 
-jmeter测试配置的sentinel的qps流控规则是否生效
+jmeter测试配置的sentinel的qps流控规则和熔断降级规则是否生效
   
 
 
