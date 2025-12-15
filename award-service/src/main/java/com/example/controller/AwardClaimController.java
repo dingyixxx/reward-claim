@@ -37,13 +37,18 @@ public class AwardClaimController {
 
 
     @PostMapping("/api/rewards/claim")
-    @SentinelResource(value = "/api/rewards/claim", fallback = "handleFallback",
+    @SentinelResource(value = "POST:api/rewards/claim",
+            fallback = "handleFallback",
+           blockHandler = "handleBlockException",
            blockHandlerClass = AwardBlockHandler.class)
     public String claimReward(@RequestHeader("userId") String userId) throws ExecutionException, InterruptedException {
         log.info("用户id：{}", userId);
         Long userIdLong = Long.parseLong(userId);
 
-        int a=1/0;
+        // 模拟可能失败的业务逻辑
+        if (Math.random() > 0.5) {
+            throw new RuntimeException("模拟异常");
+        }
 
         CompletableFuture<ResponseResult> cf = CompletableFuture.supplyAsync(() -> {
             ResponseResult userLevel = null;
@@ -76,10 +81,10 @@ public class AwardClaimController {
         return result1.getData().toString() + "-" + result2.getData().toString() + "-" + rewardClaimSuccessMessage;
 
     }
-    @ExceptionHandler(DegradeException.class)
-    public String handleDegradeException(DegradeException ex) {
-        return "handleDegradeException...handleDegradeException...handleDegradeException...handleDegradeException..";
-    }
+//    @ExceptionHandler(DegradeException.class)
+//    public String handleDegradeException(DegradeException ex) {
+//        return "handleDegradeException...handleDegradeException...handleDegradeException...handleDegradeException..";
+//    }
 
 
 
