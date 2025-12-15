@@ -37,7 +37,7 @@ public class AwardClaimController {
 
 
     @PostMapping("/api/rewards/claim")
-    @SentinelResource(value = "/api/rewards/claim", blockHandler = "handleBlockException",
+    @SentinelResource(value = "/api/rewards/claim", fallback = "handleFallback",
            blockHandlerClass = AwardBlockHandler.class)
     public String claimReward(@RequestHeader("userId") String userId) throws ExecutionException, InterruptedException {
         log.info("用户id：{}", userId);
