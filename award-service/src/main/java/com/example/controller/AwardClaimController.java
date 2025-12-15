@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @RefreshScope
@@ -42,13 +44,17 @@ public class AwardClaimController {
            blockHandler = "handleBlockException",
            blockHandlerClass = AwardBlockHandler.class)
     public String claimReward(@RequestHeader("userId") String userId) throws ExecutionException, InterruptedException {
-        log.info("用户id：{}", userId);
+        if (!isAllowed(userId, 5, 30)) {
+            log.info("被限流的用户id：{}", userId);
+            return "The request was denied";
+        }
+        log.info("放行的用户id：{}", userId);
         Long userIdLong = Long.parseLong(userId);
 
-        // 模拟可能失败的业务逻辑
-        if (Math.random() > 0.5) {
-            throw new RuntimeException("模拟异常");
-        }
+        // 模拟可能失败的业务逻辑, 触发熔断
+//        if (Math.random() > 0.5) {
+//            throw new RuntimeException("模拟异常");
+//        }
 
         CompletableFuture<ResponseResult> cf = CompletableFuture.supplyAsync(() -> {
             ResponseResult userLevel = null;
@@ -85,6 +91,30 @@ public class AwardClaimController {
 //    public String handleDegradeException(DegradeException ex) {
 //        return "handleDegradeException...handleDegradeException...handleDegradeException...handleDegradeException..";
 //    }
+
+    @Autowired
+    private RedisTemplate<String, Object> redisTemplate;
+    public boolean isAllowed(String userId, int maxRequests, int windowSeconds) {
+        String key = "sliding_window:" + userId;
+        long now = System.currentTimeMillis();
+        long windowStart = now - windowSeconds * 1000;
+
+        // 移除窗口外的旧记录
+        redisTemplate.opsForZSet().removeRangeByScore(key, 0, windowStart);
+
+        // 获取当前窗口内请求数
+        Long currentCount = redisTemplate.opsForZSet().zCard(key);
+
+        if (currentCount != null && currentCount >= maxRequests) {
+            return false; // 超限
+        }
+
+        // 添加当前请求时间戳
+        redisTemplate.opsForZSet().add(key, String.valueOf(now), now);
+        redisTemplate.expire(key, windowSeconds, TimeUnit.SECONDS);
+
+        return true;
+    }
 
 
 

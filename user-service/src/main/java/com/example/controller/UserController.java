@@ -42,6 +42,7 @@ public class UserController implements IUserClient {
     @GetMapping("/user-level/{userId}")
     public  ResponseResult getUserLevel(@PathVariable Long userId) throws InterruptedException {
         // 根据用户ID查询用户等级的业务逻辑
+//        用户等级从0~4对应级别名称为normal、silver、gold、diamond、blackDiamond
         Integer userLevel = queryUserLevelById(userId);
 //        Thread.sleep(5000);
         ResponseResult result = ResponseResult.okResult(userLevel);

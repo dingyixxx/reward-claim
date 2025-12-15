@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_6_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_6_0_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/award-service/src/main/java/com/example/config/RedisConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/award-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service/src/main/java/com/example/controller/AwardClaimController.java" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/src/main/java/com/example/controller/AwardClaimController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/award-service/target/classes/bootstrap.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/award-service/target/classes/com/example/AwardServiceApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/award-service/target/classes/com/example/controller/AwardBlockHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/award-service/target/classes/com/example/controller/AwardClaimController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +198,7 @@
       <workItem from="1765697186474" duration="1303000" />
       <workItem from="1765698501723" duration="300000" />
       <workItem from="1765705890913" duration="12139000" />
-      <workItem from="1765761878329" duration="10579000" />
+      <workItem from="1765761878329" duration="14157000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>
@@ -264,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1765805352771</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="init">
+      <created>1765806532981</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1765806532981</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
