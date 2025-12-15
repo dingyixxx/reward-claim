@@ -1,5 +1,8 @@
 package com.example.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
+import com.alibaba.csp.sentinel.slots.block.degrade.DegradeException;
 import com.example.client.IOrderClient;
 import com.example.client.IUserClient;
 import com.example.entity.ResponseResult;
@@ -8,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,9 +37,13 @@ public class AwardClaimController {
 
 
     @PostMapping("/api/rewards/claim")
+    @SentinelResource(value = "/api/rewards/claim", blockHandler = "handleBlockException",
+           blockHandlerClass = AwardBlockHandler.class)
     public String claimReward(@RequestHeader("userId") String userId) throws ExecutionException, InterruptedException {
         log.info("用户id：{}", userId);
         Long userIdLong = Long.parseLong(userId);
+
+        int a=1/0;
 
         CompletableFuture<ResponseResult> cf = CompletableFuture.supplyAsync(() -> {
             ResponseResult userLevel = null;
@@ -68,4 +76,12 @@ public class AwardClaimController {
         return result1.getData().toString() + "-" + result2.getData().toString() + "-" + rewardClaimSuccessMessage;
 
     }
+    @ExceptionHandler(DegradeException.class)
+    public String handleDegradeException(DegradeException ex) {
+        return "handleDegradeException...handleDegradeException...handleDegradeException...handleDegradeException..";
+    }
+
+
+
+
 }

@@ -2,6 +2,8 @@ server:
   port: 51605
 
 spring:
+  main:
+    web-application-type: reactive
   application:
     name: order-service
   datasource:

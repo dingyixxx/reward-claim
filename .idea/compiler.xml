@@ -31,7 +31,7 @@
       <module name="award-service" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="feign-api" options="-parameters" />
-      <module name="gateway-service" options="" />
+      <module name="gateway-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
