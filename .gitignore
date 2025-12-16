@@ -1,5 +1,7 @@
-.class
+*.class
 /target/*
 /out/*
 /bin/*
 /.git/*
+/target
+/classes/*
