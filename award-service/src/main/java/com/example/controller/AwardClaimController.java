@@ -37,24 +37,31 @@ public class AwardClaimController {
     public String rewardClaimSuccessMessage;
 
 
-
+    public  String handleFallback(String userId, Throwable throwable) {
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < 10000; i++) {
+            builder.append("handleFallback---handleFallback---handleFallback---handleFallback---handleFallback---handleFallback---handleFallback---handleFallback---handleFallback---handleFallback---");
+        }
+        return
+                builder.toString();
+    }
     @PostMapping("/api/rewards/claim")
     @SentinelResource(value = "POST:api/rewards/claim",
             fallback = "handleFallback",
-           blockHandler = "handleBlockException",
+//           blockHandler = "handleBlockException",
            blockHandlerClass = AwardBlockHandler.class)
     public String claimReward(@RequestHeader("userId") String userId) throws ExecutionException, InterruptedException {
-        if (!isAllowed(userId, 5, 30)) {
-            log.info("被限流的用户id：{}", userId);
-            return "The request was denied";
-        }
+//        if (!isAllowed(userId, 5, 30)) {
+//            log.info("被限流的用户id：{}", userId);
+//            return "The request was denied";
+//        }
         log.info("放行的用户id：{}", userId);
         Long userIdLong = Long.parseLong(userId);
 
         // 模拟可能失败的业务逻辑, 触发熔断
-//        if (Math.random() > 0.5) {
-//            throw new RuntimeException("模拟异常");
-//        }
+        if (Math.random() > 0.8) {
+            throw new RuntimeException("模拟异常");
+        }
 
         CompletableFuture<ResponseResult> cf = CompletableFuture.supplyAsync(() -> {
             ResponseResult userLevel = null;

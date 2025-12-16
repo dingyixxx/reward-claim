@@ -9,9 +9,6 @@ public class AwardBlockHandler {
                 "Requests are too frequent, please try again later";
     }
 
-    public static String handleFallback(String userId, Throwable throwable) {
-        return
-                "handleFallback---handleFallback---";
-    }
+
 
 }

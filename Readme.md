@@ -36,9 +36,11 @@ qps100
 如果拦截到了DegradeException.class
 ![img_3.png](img_3.png)
 
-如果配置了fallback,则会触发fallback
+如果配置了fallback,则会触发fallback 
 ![img_4.png](img_4.png)
 
+fallback压测参数如下, 有20%的几率有算数错误, 每秒10个请求,异常数阈值为3次,则平均错误的请求是10*0.2=2次,有可能到达3次,熔断1秒后恢复
+![img_7.png](img_7.png)
 3.领取奖励按照用户id进行限流
 xx秒内只能领取xx次奖励
 ![img_6.png](img_6.png)
