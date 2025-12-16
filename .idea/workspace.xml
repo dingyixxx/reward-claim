@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/src/main/java/com/example/controller/AwardBlockHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/src/main/java/com/example/controller/AwardBlockHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/src/main/java/com/example/controller/AwardClaimController.java" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/src/main/java/com/example/controller/AwardClaimController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/target/classes/com/example/AwardServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/target/classes/com/example/config/RedisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/target/classes/com/example/controller/AwardBlockHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/target/classes/com/example/controller/AwardClaimController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/example/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/com/example/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/example/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/example/controller/UserController.class" afterDir="false" />
-    </list>
+    <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="修改熔断参数,增加熔断jmeter压测参数截图" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +180,7 @@
       <workItem from="1765705890913" duration="12139000" />
       <workItem from="1765761878329" duration="14479000" />
       <workItem from="1765852951769" duration="87000" />
-      <workItem from="1765856729370" duration="4523000" />
+      <workItem from="1765856729370" duration="4926000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>
@@ -284,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1765811361944</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="修改熔断参数,增加熔断jmeter压测参数截图">
+      <created>1765863290054</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1765863290054</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +299,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="修改熔断参数,增加熔断jmeter压测参数截图" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改熔断参数,增加熔断jmeter压测参数截图" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/reward_claim$UserApplication_51603_weight1.ic" NAME="UserApplication-51603-weight1 Coverage Results" MODIFIED="1765703873972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
