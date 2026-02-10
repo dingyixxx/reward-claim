@@ -17,6 +17,9 @@
         <module>user-service</module>
         <module>common</module>
         <module>order-service</module>
+        <module>dubbo-api</module>
+        <module>dubbo-provider</module>
+        <module>dubbo-consumer</module>
     </modules>
 
 
@@ -156,13 +159,23 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>3.1.5</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-x-discovery</artifactId>
+                <version>5.5.0</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.18.38</version>
             </dependency>
-
+            <!-- Dubbo ZooKeeper 配置中心支持 -->
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-configcenter-zookeeper</artifactId>
+                <version>3.2.14</version> <!-- 与你的 dubbo 版本一致 -->
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -173,10 +186,22 @@
                 <artifactId>spring-boot-starter-data-redis</artifactId>
                 <version>3.1.5</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>3.2.14</version> <!-- 较新稳定版 -->
+            </dependency>
 
-
-
-
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-framework</artifactId>
+                <version>5.5.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>5.5.0</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

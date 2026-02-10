@@ -17,7 +17,7 @@ public class OrderController implements IOrderClient {
     @GetMapping("/get-order-count/{userId}")
     @Override
     public ResponseResult getOrderCount(@PathVariable("userId") Long userId) throws InterruptedException {
-//        Thread.sleep(3000);
+        Thread.sleep(3000);
 //        根据用户的下单次数计算奖励
         log.info("用户id：{}", userId);
         return ResponseResult.okResult(8848);

@@ -3,11 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/award-service.iml" filepath="$PROJECT_DIR$/award-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/common.iml" filepath="$PROJECT_DIR$/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/feign-api.iml" filepath="$PROJECT_DIR$/feign-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/order-service/order-service.iml" filepath="$PROJECT_DIR$/order-service/order-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/reward-claim.iml" filepath="$PROJECT_DIR$/reward-claim.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-service.iml" filepath="$PROJECT_DIR$/user-service.iml" />
     </modules>
   </component>
