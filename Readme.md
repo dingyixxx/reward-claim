@@ -91,3 +91,11 @@ jmeter测试配置的sentinel的qps流控规则和熔断降级规则是否生效
   
 
 
+动态修改dubbo服务权重
+![img_8.png](img_8.png)
+
+
+![img_9.png](img_9.png)
+
+![img_10.png](img_10.png)
+

@@ -3,5 +3,5 @@
 /out/*
 /bin/*
 /.git/*
-/target
+/target/
 /classes/*
