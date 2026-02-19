@@ -8,7 +8,9 @@ import module1controller.entity.Order;
 import module1controller.service.OrderService;
 import module1controller.service.RabbitMQProducerService;
 import module1controller.service.RedisService;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.skywalking.apm.toolkit.trace.*;
+import org.example.HelloService;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.rabbit.core.RabbitAdmin;
@@ -16,10 +18,7 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.http.HttpClient;
@@ -46,6 +45,11 @@ public class OrderController {
 
     @Autowired
     private RabbitMQProducerService rabbitMQProducerService;
+
+    @DubboReference(version = "1.0.0", loadbalance = "random",group = "dingyi") // 支持权重
+    private HelloService helloService;
+
+
 
 
     @Value("${key:defaultkey100}")
@@ -96,6 +100,7 @@ public class OrderController {
     // 9. 测试接口 - 创建测试订单（完整版 - 包含所有功能）
     @PostMapping("/test/create")
     public Map<String, Object> createTestOrder() {
+        helloService.sayHello("chanchan228918298");
         log.info("key1: " + key1);
         log.info("val1: " + val1);
         Map<String, Object> result = new HashMap<>();

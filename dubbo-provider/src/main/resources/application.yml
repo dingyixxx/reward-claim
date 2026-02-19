@@ -4,6 +4,10 @@ dubbo:
     service-config-mapping: true
     service-discovery:
       migration: FORCE_INTERFACE
+  protocols:
+    dubbo:
+      name: dubbo
+      port: 20880
   protocol:
     name: dubbo
     port: 20880  #   -Ddubbo.protocol.port=20882

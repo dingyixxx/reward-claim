@@ -56,3 +56,12 @@ eureka:
     service-url:
       defaultZone: http://192.168.200.131:8080/eureka
 
+dubbo:
+  application:
+    name: demo-consumer
+    qos-port: 22223
+  registry:
+    address: zookeeper://192.168.200.131:2181
+  consumer:
+    check: false
+    timeout: 3000

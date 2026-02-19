@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="add dubbo dynamic change service weight">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module1-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/Module1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/Module1Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -158,15 +160,17 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
+              <entry key="ConsumerApplication" value="STOPPED" />
               <entry key="Module1Application" value="STOPPED" />
               <entry key="Module2ConsumerApplication" value="STOPPED" />
+              <entry key="ProviderApplication" value="FAILED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Module1Application">
+  <component name="RunManager" selected="Spring Boot.ProviderApplication">
     <configuration name="ElasticApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ElasticApplication" />
       <module name="sharding-elastic-job" />
@@ -402,7 +406,7 @@
       <workItem from="1770736167403" duration="199000" />
       <workItem from="1770736391317" duration="224000" />
       <workItem from="1770736647323" duration="1240000" />
-      <workItem from="1770819943782" duration="37836000" />
+      <workItem from="1770819943782" duration="39852000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>
