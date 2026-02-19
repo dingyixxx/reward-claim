@@ -2,26 +2,33 @@ package module1controller.controller;
 
 
 
+import io.lettuce.core.tracing.Tracer;
 import lombok.extern.slf4j.Slf4j;
 import module1controller.entity.Order;
 import module1controller.service.OrderService;
 import module1controller.service.RabbitMQProducerService;
 import module1controller.service.RedisService;
+import org.apache.skywalking.apm.toolkit.trace.*;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.rabbit.core.RabbitAdmin;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -47,6 +54,42 @@ public class OrderController {
     @Value("${value:defaultvalue200}")
     private String val1;
 
+    // 模拟百度搜索接口
+    private void simulateBaiduSearch(String keyword) {
+        try {
+            // 随机睡眠 2-5 秒
+            long sleepTime = 2000 + new Random().nextInt(3000);
+            Thread.sleep(sleepTime);
+            System.out.println("搜索关键词: " + keyword + ", 耗时: " + sleepTime + " ms");
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            System.err.println("搜索任务被中断: " + keyword);
+        }
+    }
+    @Autowired
+    private RestTemplate restTemplate; // 需确保已配置（见下方）
+    // 真实调用百度搜索接口
+    private void realBaiduSearch(String keyword) {
+        try {
+            String url = "https://www.baidu.com/s?wd=" + java.net.URLEncoder.encode(keyword, "UTF-8");
+
+            // 使用 RestTemplate 发起 GET 请求
+            ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+
+            System.out.println("搜索关键词: " + keyword);
+            System.out.println("响应状态码: " + response.getStatusCode());
+            System.out.println("响应内容长度: " + (response.getBody() != null ? response.getBody().length() : 0));
+
+            // 随机睡眠 2-5 秒
+            long sleepTime = 2000 + new Random().nextInt(3000);
+            Thread.sleep(sleepTime);
+            System.out.println("搜索关键词: " + keyword + ", 耗时: " + sleepTime + " ms");
+
+        } catch (Exception e) {
+            Thread.currentThread().interrupt();
+            System.err.println("搜索任务异常: " + keyword + ", 错误信息: " + e.getMessage());
+        }
+    }
 
     // 9. 测试接口 - 创建测试订单
     // 9. 测试接口 - 创建测试订单（增强版）
@@ -60,7 +103,39 @@ public class OrderController {
 
         try {
             System.out.println("=== 开始完整测试流程 ===");
+//            在此处给我引入一个线程池, 并行地去执行: 百度搜索接口搜索关键字"婵婵1"到"婵婵10"这10个任务并随机睡眠2-5秒
+            ExecutorService executorService = Executors.newFixedThreadPool(4);
 
+
+            System.out.println("--- 2. 并行执行百度搜索任务 ---");
+            List<Future<String>> futures = new ArrayList<>();
+            // 在 submit 前获取当前 trace 上下文
+            for (int i = 1; i <= 10; i++) {
+                final int taskId = i;
+                Future<String> future = executorService.submit(
+                        CallableWrapper.of( () -> {
+                            String keyword = "婵婵" + taskId;
+                            ActiveSpan.tag("taskId", keyword);
+                            // 在子线程中恢复上下文
+                            // 模拟百度搜索接口调用
+                            realBaiduSearch(keyword);
+                            return "任务 " + taskId + " 完成";
+                        }));
+                futures.add(future);
+            }
+
+            // 等待所有任务完成
+            for (Future<String> future : futures) {
+                try {
+                    String taskResult = future.get(); // 阻塞直到任务完成
+                    System.out.println(taskResult);
+                } catch (Exception e) {
+                    System.err.println("任务执行失败: " + e.getMessage());
+                }
+            }
+
+            // 关闭线程池
+            executorService.shutdown();
             // 1. DB 写操作 - 创建订单
             System.out.println("--- 1. 创建订单 (DB写) ---");
             Order testOrder = new Order();
