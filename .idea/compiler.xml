@@ -10,6 +10,7 @@
         <module name="common" />
         <module name="gateway-service" />
         <module name="dubbo-provider" />
+        <module name="module2-consumer" />
         <module name="user-service" />
         <module name="order-service" />
         <module name="award-service" />
@@ -17,6 +18,7 @@
         <module name="sharding-elastic-job" />
         <module name="dubbo-api" />
         <module name="dubbo-consumer" />
+        <module name="module1-controller" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +34,8 @@
       <module name="dubbo-provider" options="-parameters" />
       <module name="feign-api" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
+      <module name="module1-controller" options="-parameters" />
+      <module name="module2-consumer" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="sharding-elastic-job" options="-parameters" />
       <module name="user-service" options="-parameters" />

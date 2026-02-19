@@ -1,0 +1,58 @@
+server:
+  port: 8085
+
+app:
+  id: demo-java-app5
+
+apollo:
+  meta: http://192.168.200.131:8080
+  eagerLoad:
+    enable: true
+  autoUpdateInjectedSpringProperties: true
+  bootstrap:
+    enabled: true
+    namespaces: application
+  cluster: default
+  cacheDir: /opt/data/apollo-cache
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/order_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  redis:
+    host: localhost
+    port: 6379
+    password: dingyixxx123
+    database: 0
+    timeout: 2000ms
+
+  rabbitmq:
+    host: 192.168.200.131
+    port: 5672
+    username: guest
+    password: guest
+
+  # 添加 Jackson 配置
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: module1controller.entity
+
+logging:
+  level:
+    com.example: DEBUG
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.200.131:8080/eureka
+

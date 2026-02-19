@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="@192.168.0.111">
+<dataSource name="@192.168.50.116-3306">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.54">
     <root id="1">
       <DefaultAuthPlugin>caching_sha2_password</DefaultAuthPlugin>
@@ -1037,185 +1037,3883 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <schema id="288" parent="1" name="activiti-db">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="289" parent="1" name="cloud-order">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="290" parent="1" name="cloud-user">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="291" parent="1" name="day08">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="292" parent="1" name="day09">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="293" parent="1" name="day10_homework">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="294" parent="1" name="db01">
+    <schema id="289" parent="1" name="apolloconfigdb">
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-02-10.14:31:06</LastIntrospectionLocalTimestamp>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="295" parent="1" name="db03_homework">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="296" parent="1" name="db20240910">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="297" parent="1" name="db20241210">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="298" parent="1" name="db20250317">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="299" parent="1" name="db_20240911">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="300" parent="1" name="db_20240911_02">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="301" parent="1" name="db_claim">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="302" parent="1" name="db_claim_rewards">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="303" parent="1" name="db_day09_homework">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="304" parent="1" name="db_security">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="305" parent="1" name="exam">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="306" parent="1" name="exam_book">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="307" parent="1" name="heima">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="308" parent="1" name="information_schema">
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </schema>
-    <schema id="309" parent="1" name="jsontest">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="310" parent="1" name="jsontest2">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="311" parent="1" name="jsontest3">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="312" parent="1" name="leadnews_admin">
-      <CollationName>utf8mb4_unicode_ci</CollationName>
-    </schema>
-    <schema id="313" parent="1" name="leadnews_article">
-      <CollationName>utf8mb4_unicode_ci</CollationName>
-    </schema>
-    <schema id="314" parent="1" name="leadnews_schedule">
-      <CollationName>utf8mb4_unicode_ci</CollationName>
-    </schema>
-    <schema id="315" parent="1" name="leadnews_user">
-      <CollationName>utf8mb4_unicode_ci</CollationName>
-    </schema>
-    <schema id="316" parent="1" name="leadnews_wemedia">
-      <CollationName>utf8mb4_unicode_ci</CollationName>
-    </schema>
-    <schema id="317" parent="1" name="mp">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="318" parent="1" name="mybatis_homework">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="319" parent="1" name="mysql">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="320" parent="1" name="nacos">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="321" parent="1" name="performance_schema">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="322" parent="1" name="ry-vue">
+      <LastIntrospectionLocalTimestamp>2026-02-19.05:22:24</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
-    <schema id="323" parent="1" name="seata">
+    <schema id="290" parent="1" name="apolloportaldb">
+      <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
+      <LastIntrospectionLevel>3</LastIntrospectionLevel>
+      <LastIntrospectionLocalTimestamp>2026-02-19.05:22:24</LastIntrospectionLocalTimestamp>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </schema>
+    <schema id="291" parent="1" name="cloud-order">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="324" parent="1" name="seata_demo">
+    <schema id="292" parent="1" name="cloud-user">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="325" parent="1" name="sg_exam">
+    <schema id="293" parent="1" name="day08">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="326" parent="1" name="sky_take_out">
+    <schema id="294" parent="1" name="day09">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="295" parent="1" name="day10_homework">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="296" parent="1" name="db01">
+      <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
+      <LastIntrospectionLevel>3</LastIntrospectionLevel>
+      <LastIntrospectionLocalTimestamp>2026-02-19.05:22:24</LastIntrospectionLocalTimestamp>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="297" parent="1" name="db03_homework">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="298" parent="1" name="db20240910">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="299" parent="1" name="db20241210">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="300" parent="1" name="db20250317">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="301" parent="1" name="db_20240911">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="302" parent="1" name="db_20240911_02">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="303" parent="1" name="db_claim">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="304" parent="1" name="db_claim_rewards">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="305" parent="1" name="db_day09_homework">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="306" parent="1" name="db_security">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="307" parent="1" name="exam">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="308" parent="1" name="exam_book">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="309" parent="1" name="heima">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="310" parent="1" name="information_schema">
       <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
-    <schema id="327" parent="1" name="spring_cache_demo">
+    <schema id="311" parent="1" name="jsontest">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="328" parent="1" name="sys">
+    <schema id="312" parent="1" name="jsontest2">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="329" parent="1" name="tlias_db">
+    <schema id="313" parent="1" name="jsontest3">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="330" parent="1" name="xxl_job">
+    <schema id="314" parent="1" name="leadnews_admin">
       <CollationName>utf8mb4_unicode_ci</CollationName>
     </schema>
-    <user id="331" parent="1" name="dingyi">
+    <schema id="315" parent="1" name="leadnews_article">
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </schema>
+    <schema id="316" parent="1" name="leadnews_schedule">
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </schema>
+    <schema id="317" parent="1" name="leadnews_user">
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </schema>
+    <schema id="318" parent="1" name="leadnews_wemedia">
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </schema>
+    <schema id="319" parent="1" name="mp">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="320" parent="1" name="mybatis_homework">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="321" parent="1" name="mysql">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="322" parent="1" name="nacos">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="323" parent="1" name="order_db">
+      <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
+      <LastIntrospectionLevel>3</LastIntrospectionLevel>
+      <LastIntrospectionLocalTimestamp>2026-02-19.05:26:04</LastIntrospectionLocalTimestamp>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="324" parent="1" name="performance_schema">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="325" parent="1" name="ry-vue">
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </schema>
+    <schema id="326" parent="1" name="seata">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="327" parent="1" name="seata_demo">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="328" parent="1" name="sg_exam">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="329" parent="1" name="sky_take_out">
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </schema>
+    <schema id="330" parent="1" name="spring_cache_demo">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="331" parent="1" name="sys">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="332" parent="1" name="tlias_db">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="333" parent="1" name="xxl_job">
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </schema>
+    <user id="334" parent="1" name="dingyi">
       <Host>localhost</Host>
     </user>
-    <user id="332" parent="1" name="mysql.infoschema">
+    <user id="335" parent="1" name="mysql.infoschema">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
     </user>
-    <user id="333" parent="1" name="mysql.session">
+    <user id="336" parent="1" name="mysql.session">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
     </user>
-    <user id="334" parent="1" name="mysql.sys">
+    <user id="337" parent="1" name="mysql.sys">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
     </user>
-    <user id="335" parent="1" name="root"/>
-    <table id="336" parent="294" name="student">
+    <user id="338" parent="1" name="root"/>
+    <table id="339" parent="289" name="accesskey">
+      <Comment>访问密钥</Comment>
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="337" parent="336" name="id">
-      <AutoIncrement>3</AutoIncrement>
-      <Comment>主键id</Comment>
+    <table id="340" parent="289" name="app">
+      <Comment>应用表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="341" parent="289" name="appnamespace">
+      <Comment>应用namespace定义</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="342" parent="289" name="audit">
+      <Comment>日志审计表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="343" parent="289" name="auditlog">
+      <Comment>审计日志表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="344" parent="289" name="auditlogdatainfluence">
+      <Comment>审计日志数据变动表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="345" parent="289" name="cluster">
+      <Comment>集群</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="346" parent="289" name="commit">
+      <Comment>commit 历史表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="347" parent="289" name="grayreleaserule">
+      <Comment>灰度规则表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="348" parent="289" name="instance">
+      <Comment>使用配置的应用实例</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="349" parent="289" name="instanceconfig">
+      <Comment>应用实例的配置信息</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="350" parent="289" name="item">
+      <Comment>配置项目</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="351" parent="289" name="namespace">
+      <Comment>命名空间</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="352" parent="289" name="namespacelock">
+      <Comment>namespace的编辑锁</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="353" parent="289" name="release">
+      <Comment>发布</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="354" parent="289" name="releasehistory">
+      <Comment>发布历史</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="355" parent="289" name="releasemessage">
+      <Comment>发布消息</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="356" parent="289" name="serverconfig">
+      <Comment>配置服务自身配置</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="357" parent="289" name="serviceregistry">
+      <Comment>注册中心</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="358" parent="290" name="app">
+      <Comment>应用表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="359" parent="290" name="appnamespace">
+      <Comment>应用namespace定义</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="360" parent="290" name="auditlog">
+      <Comment>审计日志表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="361" parent="290" name="auditlogdatainfluence">
+      <Comment>审计日志数据变动表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="362" parent="290" name="authorities">
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="363" parent="290" name="consumer">
+      <Comment>开放API消费者</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="364" parent="290" name="consumeraudit">
+      <Comment>consumer审计表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="365" parent="290" name="consumerrole">
+      <Comment>consumer和role的绑定表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="366" parent="290" name="consumertoken">
+      <Comment>consumer token表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="367" parent="290" name="favorite">
+      <Comment>应用收藏表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="368" parent="290" name="permission">
+      <Comment>permission表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="369" parent="290" name="role">
+      <Comment>角色表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="370" parent="290" name="rolepermission">
+      <Comment>角色和权限的绑定表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="371" parent="290" name="serverconfig">
+      <Comment>配置服务自身配置</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="372" parent="290" name="spring_session">
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <Options>row_format
+DYNAMIC</Options>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="373" parent="290" name="spring_session_attributes">
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <Options>row_format
+DYNAMIC</Options>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="374" parent="290" name="userrole">
+      <Comment>用户和role的绑定表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="375" parent="290" name="users">
+      <Comment>用户表</Comment>
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <routine id="376" parent="323" name="InsertOrderWithSleep">
+      <Definer>root@%</Definer>
+      <DetailsLevel>3</DetailsLevel>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>274</SourceTextLength>
+    </routine>
+    <table id="377" parent="323" name="order">
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="378" parent="339" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增主键</Comment>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StoredType>int|0s</StoredType>
+      <StoredType>int unsigned|0s</StoredType>
     </column>
-    <column id="338" parent="336" name="name">
-      <Comment>学生姓名</Comment>
+    <column id="379" parent="339" name="AppId">
+      <Comment>AppID</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StoredType>varchar(100)|0s</StoredType>
+      <StoredType>varchar(64)|0s</StoredType>
     </column>
-    <column id="339" parent="336" name="age">
-      <Comment>年龄</Comment>
+    <column id="380" parent="339" name="Secret">
+      <Comment>Secret</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(128)|0s</StoredType>
+    </column>
+    <column id="381" parent="339" name="Mode">
+      <Comment>密钥模式，0: filter，1: observer</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>tinyint unsigned|0s</StoredType>
+    </column>
+    <column id="382" parent="339" name="IsEnabled">
+      <Comment>1: enabled, 0: disabled</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="383" parent="339" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="384" parent="339" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="385" parent="339" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="386" parent="339" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="387" parent="339" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>10</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="388" parent="339" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>11</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="389" parent="339" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="390" parent="339" name="UK_AppId_Secret_DeletedAt">
+      <ColNames>AppId
+Secret
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="391" parent="339" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="392" parent="339" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="393" parent="339" name="UK_AppId_Secret_DeletedAt">
+      <UnderlyingIndexName>UK_AppId_Secret_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="394" parent="340" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="395" parent="340" name="AppId">
+      <Comment>AppID</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="396" parent="340" name="Name">
+      <Comment>应用名</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="397" parent="340" name="OrgId">
+      <Comment>部门Id</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="398" parent="340" name="OrgName">
+      <Comment>部门名字</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="399" parent="340" name="OwnerName">
+      <Comment>ownerName</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="400" parent="340" name="OwnerEmail">
+      <Comment>ownerEmail</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="401" parent="340" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="402" parent="340" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="403" parent="340" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="404" parent="340" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="405" parent="340" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>12</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="406" parent="340" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>13</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="407" parent="340" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="408" parent="340" name="UK_AppId_DeletedAt">
+      <ColNames>AppId
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="409" parent="340" name="IX_Name">
+      <ColNames>Name</ColNames>
+      <PrefixLengths>191</PrefixLengths>
+      <Type>btree</Type>
+    </index>
+    <index id="410" parent="340" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="411" parent="340" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="412" parent="340" name="UK_AppId_DeletedAt">
+      <UnderlyingIndexName>UK_AppId_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="413" parent="341" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="414" parent="341" name="Name">
+      <Comment>namespace名字，注意，需要全局唯一</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="415" parent="341" name="AppId">
+      <Comment>app id</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="416" parent="341" name="Format">
+      <Comment>namespace的format类型</Comment>
+      <DefaultExpression>&apos;properties&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="417" parent="341" name="IsPublic">
+      <Comment>namespace是否为公共</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="418" parent="341" name="Comment">
+      <Comment>注释</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="419" parent="341" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="420" parent="341" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="421" parent="341" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="422" parent="341" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="423" parent="341" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>11</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="424" parent="341" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>12</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="425" parent="341" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="426" parent="341" name="UK_AppId_Name_DeletedAt">
+      <ColNames>AppId
+Name
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="427" parent="341" name="Name_AppId">
+      <ColNames>Name
+AppId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="428" parent="341" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="429" parent="341" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="430" parent="341" name="UK_AppId_Name_DeletedAt">
+      <UnderlyingIndexName>UK_AppId_Name_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="431" parent="342" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="432" parent="342" name="EntityName">
+      <Comment>表名</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="433" parent="342" name="EntityId">
+      <Comment>记录ID</Comment>
+      <Position>3</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="434" parent="342" name="OpName">
+      <Comment>操作类型</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="435" parent="342" name="Comment">
+      <Comment>备注</Comment>
+      <Position>5</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="436" parent="342" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="437" parent="342" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="438" parent="342" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="439" parent="342" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="440" parent="342" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>10</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="441" parent="342" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>11</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="442" parent="342" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="443" parent="342" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="444" parent="342" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="445" parent="343" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="446" parent="343" name="TraceId">
+      <Comment>链路全局唯一ID</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="447" parent="343" name="SpanId">
+      <Comment>跨度ID</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="448" parent="343" name="ParentSpanId">
+      <Comment>父跨度ID</Comment>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="449" parent="343" name="FollowsFromSpanId">
+      <Comment>上一个兄弟跨度ID</Comment>
+      <Position>5</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="450" parent="343" name="Operator">
+      <Comment>操作人</Comment>
+      <DefaultExpression>&apos;anonymous&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="451" parent="343" name="OpType">
+      <Comment>操作类型</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="452" parent="343" name="OpName">
+      <Comment>操作名称</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>varchar(150)|0s</StoredType>
+    </column>
+    <column id="453" parent="343" name="Description">
+      <Comment>备注</Comment>
+      <Position>9</Position>
+      <StoredType>varchar(200)|0s</StoredType>
+    </column>
+    <column id="454" parent="343" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="455" parent="343" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="456" parent="343" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <Position>12</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="457" parent="343" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>13</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="458" parent="343" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>14</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="459" parent="343" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>15</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="460" parent="343" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="461" parent="343" name="IX_TraceId">
+      <ColNames>TraceId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="462" parent="343" name="IX_Operator">
+      <ColNames>Operator</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="463" parent="343" name="IX_OpName">
+      <ColNames>OpName</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="464" parent="343" name="IX_DataChange_CreatedTime">
+      <ColNames>DataChange_CreatedTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="465" parent="343" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="466" parent="344" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="467" parent="344" name="SpanId">
+      <Comment>跨度ID</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>char(32)|0s</StoredType>
+    </column>
+    <column id="468" parent="344" name="InfluenceEntityId">
+      <Comment>记录ID</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="469" parent="344" name="InfluenceEntityName">
+      <Comment>表名</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="470" parent="344" name="FieldName">
+      <Comment>字段名称</Comment>
+      <Position>5</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="471" parent="344" name="FieldOldValue">
+      <Comment>字段旧值</Comment>
+      <Position>6</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="472" parent="344" name="FieldNewValue">
+      <Comment>字段新值</Comment>
+      <Position>7</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="473" parent="344" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="474" parent="344" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="475" parent="344" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <Position>10</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="476" parent="344" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="477" parent="344" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>12</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="478" parent="344" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>13</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="479" parent="344" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="480" parent="344" name="IX_SpanId">
+      <ColNames>SpanId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="481" parent="344" name="IX_EntityId">
+      <ColNames>InfluenceEntityId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="482" parent="344" name="IX_DataChange_CreatedTime">
+      <ColNames>DataChange_CreatedTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="483" parent="344" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="484" parent="345" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="485" parent="345" name="Name">
+      <Comment>集群名字</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="486" parent="345" name="AppId">
+      <Comment>App id</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="487" parent="345" name="ParentClusterId">
+      <Comment>父cluster</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="488" parent="345" name="Comment">
+      <Comment>备注</Comment>
+      <Position>5</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="489" parent="345" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="490" parent="345" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="491" parent="345" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="492" parent="345" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="493" parent="345" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>10</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="494" parent="345" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>11</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="495" parent="345" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="496" parent="345" name="UK_AppId_Name_DeletedAt">
+      <ColNames>AppId
+Name
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="497" parent="345" name="IX_ParentClusterId">
+      <ColNames>ParentClusterId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="498" parent="345" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="499" parent="345" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="500" parent="345" name="UK_AppId_Name_DeletedAt">
+      <UnderlyingIndexName>UK_AppId_Name_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="501" parent="346" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="502" parent="346" name="ChangeSets">
+      <Comment>修改变更集</Comment>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>longtext|0s</StoredType>
+    </column>
+    <column id="503" parent="346" name="AppId">
+      <Comment>AppID</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="504" parent="346" name="ClusterName">
+      <Comment>ClusterName</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="505" parent="346" name="NamespaceName">
+      <Comment>namespaceName</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="506" parent="346" name="Comment">
+      <Comment>备注</Comment>
+      <Position>6</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="507" parent="346" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="508" parent="346" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="509" parent="346" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="510" parent="346" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="511" parent="346" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>11</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="512" parent="346" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>12</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="513" parent="346" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="514" parent="346" name="AppId">
+      <ColNames>AppId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="515" parent="346" name="ClusterName">
+      <ColNames>ClusterName</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="516" parent="346" name="NamespaceName">
+      <ColNames>NamespaceName</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="517" parent="346" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="518" parent="346" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="519" parent="347" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="520" parent="347" name="AppId">
+      <Comment>AppID</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="521" parent="347" name="ClusterName">
+      <Comment>Cluster Name</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="522" parent="347" name="NamespaceName">
+      <Comment>Namespace Name</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="523" parent="347" name="BranchName">
+      <Comment>branch name</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="524" parent="347" name="Rules">
+      <Comment>灰度规则</Comment>
+      <DefaultExpression>&apos;[]&apos;</DefaultExpression>
+      <Position>6</Position>
+      <StoredType>varchar(16000)|0s</StoredType>
+    </column>
+    <column id="525" parent="347" name="ReleaseId">
+      <Comment>灰度对应的release</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="526" parent="347" name="BranchStatus">
+      <Comment>灰度分支状态: 0:删除分支,1:正在使用的规则 2：全量发布</Comment>
+      <DefaultExpression>1</DefaultExpression>
+      <Position>8</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="527" parent="347" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="528" parent="347" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="529" parent="347" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="530" parent="347" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>12</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="531" parent="347" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>13</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="532" parent="347" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>14</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="533" parent="347" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="534" parent="347" name="IX_Namespace">
+      <ColNames>AppId
+ClusterName
+NamespaceName</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="535" parent="347" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="536" parent="347" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="537" parent="348" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="538" parent="348" name="AppId">
+      <Comment>AppID</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="539" parent="348" name="ClusterName">
+      <Comment>ClusterName</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="540" parent="348" name="DataCenter">
+      <Comment>Data Center Name</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="541" parent="348" name="Ip">
+      <Comment>instance ip</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="542" parent="348" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="543" parent="348" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>7</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="544" parent="348" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="545" parent="348" name="IX_UNIQUE_KEY">
+      <ColNames>AppId
+ClusterName
+Ip
+DataCenter</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="546" parent="348" name="IX_IP">
+      <ColNames>Ip</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="547" parent="348" name="IX_DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="548" parent="348" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="549" parent="348" name="IX_UNIQUE_KEY">
+      <UnderlyingIndexName>IX_UNIQUE_KEY</UnderlyingIndexName>
+    </key>
+    <column id="550" parent="349" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="551" parent="349" name="InstanceId">
+      <Comment>Instance Id</Comment>
+      <Position>2</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="552" parent="349" name="ConfigAppId">
+      <Comment>Config App Id</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="553" parent="349" name="ConfigClusterName">
+      <Comment>Config Cluster Name</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="554" parent="349" name="ConfigNamespaceName">
+      <Comment>Config Namespace Name</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="555" parent="349" name="ReleaseKey">
+      <Comment>发布的Key</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="556" parent="349" name="ReleaseDeliveryTime">
+      <Comment>配置获取时间</Comment>
+      <Position>7</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="557" parent="349" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="558" parent="349" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>9</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="559" parent="349" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="560" parent="349" name="IX_UNIQUE_KEY">
+      <ColNames>InstanceId
+ConfigAppId
+ConfigNamespaceName</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="561" parent="349" name="IX_Valid_Namespace">
+      <ColNames>ConfigAppId
+ConfigClusterName
+ConfigNamespaceName
+DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="562" parent="349" name="IX_ReleaseKey">
+      <ColNames>ReleaseKey</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="563" parent="349" name="IX_DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="564" parent="349" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="565" parent="349" name="IX_UNIQUE_KEY">
+      <UnderlyingIndexName>IX_UNIQUE_KEY</UnderlyingIndexName>
+    </key>
+    <column id="566" parent="350" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="567" parent="350" name="NamespaceId">
+      <Comment>集群NamespaceId</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="568" parent="350" name="Key">
+      <Comment>配置项Key</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(128)|0s</StoredType>
+    </column>
+    <column id="569" parent="350" name="Type">
+      <Comment>配置项类型，0: String，1: Number，2: Boolean，3: JSON</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>tinyint unsigned|0s</StoredType>
+    </column>
+    <column id="570" parent="350" name="Value">
+      <Comment>配置项值</Comment>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>longtext|0s</StoredType>
+    </column>
+    <column id="571" parent="350" name="Comment">
+      <Comment>注释</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>6</Position>
+      <StoredType>varchar(1024)|0s</StoredType>
+    </column>
+    <column id="572" parent="350" name="LineNum">
+      <Comment>行号</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <Position>7</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="573" parent="350" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="574" parent="350" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="575" parent="350" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="576" parent="350" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="577" parent="350" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>12</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="578" parent="350" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>13</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="579" parent="350" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="580" parent="350" name="IX_GroupId">
+      <ColNames>NamespaceId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="581" parent="350" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="582" parent="350" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="583" parent="351" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="584" parent="351" name="AppId">
+      <Comment>AppID</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="585" parent="351" name="ClusterName">
+      <Comment>Cluster Name</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="586" parent="351" name="NamespaceName">
+      <Comment>Namespace Name</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="587" parent="351" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="588" parent="351" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="589" parent="351" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="590" parent="351" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="591" parent="351" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>9</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="592" parent="351" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>10</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="593" parent="351" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="594" parent="351" name="UK_AppId_ClusterName_NamespaceName_DeletedAt">
+      <ColNames>AppId
+ClusterName
+NamespaceName
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="595" parent="351" name="IX_NamespaceName">
+      <ColNames>NamespaceName</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="596" parent="351" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="597" parent="351" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="598" parent="351" name="UK_AppId_ClusterName_NamespaceName_DeletedAt">
+      <UnderlyingIndexName>UK_AppId_ClusterName_NamespaceName_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="599" parent="352" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="600" parent="352" name="NamespaceId">
+      <Comment>集群NamespaceId</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="601" parent="352" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="602" parent="352" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="603" parent="352" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>5</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="604" parent="352" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>6</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="605" parent="352" name="IsDeleted">
+      <Comment>软删除</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <Position>7</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="606" parent="352" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <index id="607" parent="352" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="608" parent="352" name="UK_NamespaceId_DeletedAt">
+      <ColNames>NamespaceId
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="609" parent="352" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="610" parent="352" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="611" parent="352" name="UK_NamespaceId_DeletedAt">
+      <UnderlyingIndexName>UK_NamespaceId_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="612" parent="353" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="613" parent="353" name="ReleaseKey">
+      <Comment>发布的Key</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="614" parent="353" name="Name">
+      <Comment>发布名字</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="615" parent="353" name="Comment">
+      <Comment>发布说明</Comment>
+      <Position>4</Position>
+      <StoredType>varchar(256)|0s</StoredType>
+    </column>
+    <column id="616" parent="353" name="AppId">
+      <Comment>AppID</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="617" parent="353" name="ClusterName">
+      <Comment>ClusterName</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="618" parent="353" name="NamespaceName">
+      <Comment>namespaceName</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="619" parent="353" name="Configurations">
+      <Comment>发布配置</Comment>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>longtext|0s</StoredType>
+    </column>
+    <column id="620" parent="353" name="IsAbandoned">
+      <Comment>是否废弃</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="621" parent="353" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="622" parent="353" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="623" parent="353" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>12</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="624" parent="353" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>13</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="625" parent="353" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>14</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="626" parent="353" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>15</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="627" parent="353" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="628" parent="353" name="UK_ReleaseKey_DeletedAt">
+      <ColNames>ReleaseKey
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="629" parent="353" name="AppId_ClusterName_GroupName">
+      <ColNames>AppId
+ClusterName
+NamespaceName</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="630" parent="353" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="631" parent="353" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="632" parent="353" name="UK_ReleaseKey_DeletedAt">
+      <UnderlyingIndexName>UK_ReleaseKey_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="633" parent="354" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="634" parent="354" name="AppId">
+      <Comment>AppID</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="635" parent="354" name="ClusterName">
+      <Comment>ClusterName</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="636" parent="354" name="NamespaceName">
+      <Comment>namespaceName</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="637" parent="354" name="BranchName">
+      <Comment>发布分支名</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="638" parent="354" name="ReleaseId">
+      <Comment>关联的Release Id</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="639" parent="354" name="PreviousReleaseId">
+      <Comment>前一次发布的ReleaseId</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="640" parent="354" name="Operation">
+      <Comment>发布类型，0: 普通发布，1: 回滚，2: 灰度发布，3: 灰度规则更新，4: 灰度合并回主分支发布，5: 主分支发布灰度自动发布，6: 主分支回滚灰度自动发布，7: 放弃灰度</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>tinyint unsigned|0s</StoredType>
+    </column>
+    <column id="641" parent="354" name="OperationContext">
+      <Comment>发布上下文信息</Comment>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>longtext|0s</StoredType>
+    </column>
+    <column id="642" parent="354" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="643" parent="354" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="644" parent="354" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>12</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="645" parent="354" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>13</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="646" parent="354" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>14</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="647" parent="354" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>15</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="648" parent="354" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="649" parent="354" name="IX_Namespace">
+      <ColNames>AppId
+ClusterName
+NamespaceName
+BranchName</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="650" parent="354" name="IX_ReleaseId">
+      <ColNames>ReleaseId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="651" parent="354" name="IX_PreviousReleaseId">
+      <ColNames>PreviousReleaseId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="652" parent="354" name="IX_DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="653" parent="354" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="654" parent="355" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="655" parent="355" name="Message">
+      <Comment>发布的消息内容</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(1024)|0s</StoredType>
+    </column>
+    <column id="656" parent="355" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>3</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="657" parent="355" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="658" parent="355" name="IX_Message">
+      <ColNames>Message</ColNames>
+      <PrefixLengths>191</PrefixLengths>
+      <Type>btree</Type>
+    </index>
+    <index id="659" parent="355" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="660" parent="355" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="661" parent="356" name="Id">
+      <AutoIncrement>7</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="662" parent="356" name="Key">
+      <Comment>配置项Key</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="663" parent="356" name="Cluster">
+      <Comment>配置对应的集群，default为不针对特定的集群</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="664" parent="356" name="Value">
+      <Comment>配置项值</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(2048)|0s</StoredType>
+    </column>
+    <column id="665" parent="356" name="Comment">
+      <Comment>注释</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>5</Position>
+      <StoredType>varchar(1024)|0s</StoredType>
+    </column>
+    <column id="666" parent="356" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="667" parent="356" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="668" parent="356" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="669" parent="356" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="670" parent="356" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>10</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="671" parent="356" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>11</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="672" parent="356" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="673" parent="356" name="UK_Key_Cluster_DeletedAt">
+      <ColNames>Key
+Cluster
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="674" parent="356" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="675" parent="356" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="676" parent="356" name="UK_Key_Cluster_DeletedAt">
+      <UnderlyingIndexName>UK_Key_Cluster_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="677" parent="357" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="678" parent="357" name="ServiceName">
+      <Comment>服务名</Comment>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="679" parent="357" name="Uri">
+      <Comment>服务地址</Comment>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="680" parent="357" name="Cluster">
+      <Comment>集群，可以用来标识apollo.cluster或者网络分区</Comment>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="681" parent="357" name="Metadata">
+      <Comment>元数据，key value结构的json object，为了方面后面扩展功能而不需要修改表结构</Comment>
+      <DefaultExpression>&apos;{}&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(1024)|0s</StoredType>
+    </column>
+    <column id="682" parent="357" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="683" parent="357" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>7</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="684" parent="357" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="685" parent="357" name="IX_UNIQUE_KEY">
+      <ColNames>ServiceName
+Uri</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="686" parent="357" name="IX_DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="687" parent="357" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="688" parent="357" name="IX_UNIQUE_KEY">
+      <UnderlyingIndexName>IX_UNIQUE_KEY</UnderlyingIndexName>
+    </key>
+    <column id="689" parent="358" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="690" parent="358" name="AppId">
+      <Comment>AppID</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="691" parent="358" name="Name">
+      <Comment>应用名</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="692" parent="358" name="OrgId">
+      <Comment>部门Id</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="693" parent="358" name="OrgName">
+      <Comment>部门名字</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="694" parent="358" name="OwnerName">
+      <Comment>ownerName</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="695" parent="358" name="OwnerEmail">
+      <Comment>ownerEmail</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="696" parent="358" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="697" parent="358" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="698" parent="358" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="699" parent="358" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="700" parent="358" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>12</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="701" parent="358" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>13</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="702" parent="358" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="703" parent="358" name="UK_AppId_DeletedAt">
+      <ColNames>AppId
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="704" parent="358" name="IX_Name">
+      <ColNames>Name</ColNames>
+      <PrefixLengths>191</PrefixLengths>
+      <Type>btree</Type>
+    </index>
+    <index id="705" parent="358" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="706" parent="358" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="707" parent="358" name="UK_AppId_DeletedAt">
+      <UnderlyingIndexName>UK_AppId_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="708" parent="359" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="709" parent="359" name="Name">
+      <Comment>namespace名字，注意，需要全局唯一</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="710" parent="359" name="AppId">
+      <Comment>app id</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="711" parent="359" name="Format">
+      <Comment>namespace的format类型</Comment>
+      <DefaultExpression>&apos;properties&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="712" parent="359" name="IsPublic">
+      <Comment>namespace是否为公共</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="713" parent="359" name="Comment">
+      <Comment>注释</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="714" parent="359" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="715" parent="359" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="716" parent="359" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="717" parent="359" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="718" parent="359" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>11</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="719" parent="359" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>12</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="720" parent="359" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="721" parent="359" name="UK_AppId_Name_DeletedAt">
+      <ColNames>AppId
+Name
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="722" parent="359" name="Name_AppId">
+      <ColNames>Name
+AppId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="723" parent="359" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="724" parent="359" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="725" parent="359" name="UK_AppId_Name_DeletedAt">
+      <UnderlyingIndexName>UK_AppId_Name_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="726" parent="360" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="727" parent="360" name="TraceId">
+      <Comment>链路全局唯一ID</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="728" parent="360" name="SpanId">
+      <Comment>跨度ID</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="729" parent="360" name="ParentSpanId">
+      <Comment>父跨度ID</Comment>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="730" parent="360" name="FollowsFromSpanId">
+      <Comment>上一个兄弟跨度ID</Comment>
+      <Position>5</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="731" parent="360" name="Operator">
+      <Comment>操作人</Comment>
+      <DefaultExpression>&apos;anonymous&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="732" parent="360" name="OpType">
+      <Comment>操作类型</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="733" parent="360" name="OpName">
+      <Comment>操作名称</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>varchar(150)|0s</StoredType>
+    </column>
+    <column id="734" parent="360" name="Description">
+      <Comment>备注</Comment>
+      <Position>9</Position>
+      <StoredType>varchar(200)|0s</StoredType>
+    </column>
+    <column id="735" parent="360" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="736" parent="360" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="737" parent="360" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <Position>12</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="738" parent="360" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>13</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="739" parent="360" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>14</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="740" parent="360" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>15</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="741" parent="360" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="742" parent="360" name="IX_TraceId">
+      <ColNames>TraceId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="743" parent="360" name="IX_Operator">
+      <ColNames>Operator</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="744" parent="360" name="IX_OpName">
+      <ColNames>OpName</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="745" parent="360" name="IX_DataChange_CreatedTime">
+      <ColNames>DataChange_CreatedTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="746" parent="360" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="747" parent="361" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="748" parent="361" name="SpanId">
+      <Comment>跨度ID</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>char(32)|0s</StoredType>
+    </column>
+    <column id="749" parent="361" name="InfluenceEntityId">
+      <Comment>记录ID</Comment>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="750" parent="361" name="InfluenceEntityName">
+      <Comment>表名</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="751" parent="361" name="FieldName">
+      <Comment>字段名称</Comment>
+      <Position>5</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <column id="752" parent="361" name="FieldOldValue">
+      <Comment>字段旧值</Comment>
+      <Position>6</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="753" parent="361" name="FieldNewValue">
+      <Comment>字段新值</Comment>
+      <Position>7</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="754" parent="361" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="755" parent="361" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="756" parent="361" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <Position>10</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="757" parent="361" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="758" parent="361" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>12</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="759" parent="361" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>13</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="760" parent="361" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="761" parent="361" name="IX_SpanId">
+      <ColNames>SpanId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="762" parent="361" name="IX_EntityId">
+      <ColNames>InfluenceEntityId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="763" parent="361" name="IX_DataChange_CreatedTime">
+      <ColNames>DataChange_CreatedTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="764" parent="361" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="765" parent="362" name="Id">
+      <AutoIncrement>2</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="766" parent="362" name="Username">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="767" parent="362" name="Authority">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
+    <index id="768" parent="362" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="769" parent="362" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="770" parent="363" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="771" parent="363" name="AppId">
+      <Comment>AppID</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="772" parent="363" name="Name">
+      <Comment>应用名</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="773" parent="363" name="OrgId">
+      <Comment>部门Id</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="774" parent="363" name="OrgName">
+      <Comment>部门名字</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="775" parent="363" name="OwnerName">
+      <Comment>ownerName</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="776" parent="363" name="OwnerEmail">
+      <Comment>ownerEmail</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>varchar(500)|0s</StoredType>
+    </column>
+    <column id="777" parent="363" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="778" parent="363" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="779" parent="363" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="780" parent="363" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="781" parent="363" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>12</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="782" parent="363" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>13</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="783" parent="363" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="784" parent="363" name="UK_AppId_DeletedAt">
+      <ColNames>AppId
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="785" parent="363" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="786" parent="363" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="787" parent="363" name="UK_AppId_DeletedAt">
+      <UnderlyingIndexName>UK_AppId_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="788" parent="364" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="789" parent="364" name="ConsumerId">
+      <Comment>Consumer Id</Comment>
+      <Position>2</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="790" parent="364" name="Uri">
+      <Comment>访问的Uri</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(1024)|0s</StoredType>
+    </column>
+    <column id="791" parent="364" name="Method">
+      <Comment>访问的Method</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(16)|0s</StoredType>
+    </column>
+    <column id="792" parent="364" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="793" parent="364" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>6</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="794" parent="364" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="795" parent="364" name="IX_ConsumerId">
+      <ColNames>ConsumerId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="796" parent="364" name="IX_DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="797" parent="364" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="798" parent="365" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="799" parent="365" name="ConsumerId">
+      <Comment>Consumer Id</Comment>
+      <Position>2</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="800" parent="365" name="RoleId">
+      <Comment>Role Id</Comment>
+      <Position>3</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="801" parent="365" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="802" parent="365" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="803" parent="365" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="804" parent="365" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="805" parent="365" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>8</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="806" parent="365" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>9</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="807" parent="365" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="808" parent="365" name="UK_ConsumerId_RoleId_DeletedAt">
+      <ColNames>ConsumerId
+RoleId
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="809" parent="365" name="IX_RoleId">
+      <ColNames>RoleId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="810" parent="365" name="IX_DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="811" parent="365" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="812" parent="365" name="UK_ConsumerId_RoleId_DeletedAt">
+      <UnderlyingIndexName>UK_ConsumerId_RoleId_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="813" parent="366" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="814" parent="366" name="ConsumerId">
+      <Comment>ConsumerId</Comment>
+      <Position>2</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="815" parent="366" name="Token">
+      <Comment>token</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(128)|0s</StoredType>
+    </column>
+    <column id="816" parent="366" name="RateLimit">
+      <Comment>限流值</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="340" parent="336" name="address">
+    <column id="817" parent="366" name="Expires">
+      <Comment>token失效时间</Comment>
+      <DefaultExpression>&apos;2099-01-01 00:00:00&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>datetime|0s</StoredType>
+    </column>
+    <column id="818" parent="366" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="819" parent="366" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="820" parent="366" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="821" parent="366" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="822" parent="366" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>10</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="823" parent="366" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>11</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="824" parent="366" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="825" parent="366" name="UK_Token_DeletedAt">
+      <ColNames>Token
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="826" parent="366" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="827" parent="366" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="828" parent="366" name="UK_Token_DeletedAt">
+      <UnderlyingIndexName>UK_Token_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="829" parent="367" name="Id">
+      <AutoIncrement>23</AutoIncrement>
+      <Comment>主键</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="830" parent="367" name="UserId">
+      <Comment>收藏的用户</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="831" parent="367" name="AppId">
+      <Comment>AppID</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="832" parent="367" name="Position">
+      <Comment>收藏顺序</Comment>
+      <DefaultExpression>10000</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="833" parent="367" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="834" parent="367" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="835" parent="367" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="836" parent="367" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="837" parent="367" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>9</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="838" parent="367" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>10</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="839" parent="367" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="840" parent="367" name="UK_UserId_AppId_DeletedAt">
+      <ColNames>UserId
+AppId
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="841" parent="367" name="AppId">
+      <ColNames>AppId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="842" parent="367" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="843" parent="367" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="844" parent="367" name="UK_UserId_AppId_DeletedAt">
+      <UnderlyingIndexName>UK_UserId_AppId_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="845" parent="368" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="846" parent="368" name="PermissionType">
+      <Comment>权限类型</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(32)|0s</StoredType>
+    </column>
+    <column id="847" parent="368" name="TargetId">
+      <Comment>权限对象类型</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(256)|0s</StoredType>
+    </column>
+    <column id="848" parent="368" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="849" parent="368" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="850" parent="368" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="851" parent="368" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="852" parent="368" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>8</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="853" parent="368" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>9</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="854" parent="368" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="855" parent="368" name="UK_TargetId_PermissionType_DeletedAt">
+      <ColNames>TargetId
+PermissionType
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="856" parent="368" name="IX_DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="857" parent="368" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="858" parent="368" name="UK_TargetId_PermissionType_DeletedAt">
+      <UnderlyingIndexName>UK_TargetId_PermissionType_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="859" parent="369" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="860" parent="369" name="RoleName">
+      <Comment>Role name</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(256)|0s</StoredType>
+    </column>
+    <column id="861" parent="369" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="862" parent="369" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="863" parent="369" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="864" parent="369" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="865" parent="369" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>7</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="866" parent="369" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>8</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="867" parent="369" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="868" parent="369" name="UK_RoleName_DeletedAt">
+      <ColNames>RoleName
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="869" parent="369" name="IX_DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="870" parent="369" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="871" parent="369" name="UK_RoleName_DeletedAt">
+      <UnderlyingIndexName>UK_RoleName_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="872" parent="370" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="873" parent="370" name="RoleId">
+      <Comment>Role Id</Comment>
+      <Position>2</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="874" parent="370" name="PermissionId">
+      <Comment>Permission Id</Comment>
+      <Position>3</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="875" parent="370" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="876" parent="370" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="877" parent="370" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="878" parent="370" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="879" parent="370" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>8</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="880" parent="370" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>9</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="881" parent="370" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="882" parent="370" name="UK_RoleId_PermissionId_DeletedAt">
+      <ColNames>RoleId
+PermissionId
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="883" parent="370" name="IX_PermissionId">
+      <ColNames>PermissionId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="884" parent="370" name="IX_DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="885" parent="370" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="886" parent="370" name="UK_RoleId_PermissionId_DeletedAt">
+      <UnderlyingIndexName>UK_RoleId_PermissionId_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="887" parent="371" name="Id">
+      <AutoIncrement>9</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="888" parent="371" name="Key">
+      <Comment>配置项Key</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="889" parent="371" name="Value">
+      <Comment>配置项值</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(2048)|0s</StoredType>
+    </column>
+    <column id="890" parent="371" name="Comment">
+      <Comment>注释</Comment>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <Position>4</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>varchar(1024)|0s</StoredType>
     </column>
-    <index id="341" parent="336" name="PRIMARY">
+    <column id="891" parent="371" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="892" parent="371" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="893" parent="371" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="894" parent="371" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="895" parent="371" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>9</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="896" parent="371" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>10</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="897" parent="371" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="898" parent="371" name="UK_Key_DeletedAt">
+      <ColNames>Key
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="899" parent="371" name="DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="900" parent="371" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="901" parent="371" name="UK_Key_DeletedAt">
+      <UnderlyingIndexName>UK_Key_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="902" parent="372" name="PRIMARY_ID">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>char(36)|0s</StoredType>
+    </column>
+    <column id="903" parent="372" name="SESSION_ID">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>char(36)|0s</StoredType>
+    </column>
+    <column id="904" parent="372" name="CREATION_TIME">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="905" parent="372" name="LAST_ACCESS_TIME">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="906" parent="372" name="MAX_INACTIVE_INTERVAL">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="907" parent="372" name="EXPIRY_TIME">
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="908" parent="372" name="PRINCIPAL_NAME">
+      <Position>7</Position>
+      <StoredType>varchar(100)|0s</StoredType>
+    </column>
+    <index id="909" parent="372" name="PRIMARY">
+      <ColNames>PRIMARY_ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="910" parent="372" name="SPRING_SESSION_IX1">
+      <ColNames>SESSION_ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="911" parent="372" name="SPRING_SESSION_IX2">
+      <ColNames>EXPIRY_TIME</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="912" parent="372" name="SPRING_SESSION_IX3">
+      <ColNames>PRINCIPAL_NAME</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="913" parent="372" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="914" parent="372" name="SPRING_SESSION_IX1">
+      <UnderlyingIndexName>SPRING_SESSION_IX1</UnderlyingIndexName>
+    </key>
+    <column id="915" parent="373" name="SESSION_PRIMARY_ID">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>char(36)|0s</StoredType>
+    </column>
+    <column id="916" parent="373" name="ATTRIBUTE_NAME">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(200)|0s</StoredType>
+    </column>
+    <column id="917" parent="373" name="ATTRIBUTE_BYTES">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>blob|0s</StoredType>
+    </column>
+    <foreign-key id="918" parent="373" name="SPRING_SESSION_ATTRIBUTES_FK">
+      <ColNames>SESSION_PRIMARY_ID</ColNames>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>PRIMARY_ID</RefColNames>
+      <RefTableName>spring_session</RefTableName>
+    </foreign-key>
+    <index id="919" parent="373" name="PRIMARY">
+      <ColNames>SESSION_PRIMARY_ID
+ATTRIBUTE_NAME</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="920" parent="373" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="921" parent="374" name="Id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="922" parent="374" name="UserId">
+      <Comment>用户身份标识</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>2</Position>
+      <StoredType>varchar(128)|0s</StoredType>
+    </column>
+    <column id="923" parent="374" name="RoleId">
+      <Comment>Role Id</Comment>
+      <Position>3</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="924" parent="374" name="IsDeleted">
+      <Comment>1: deleted, 0: normal</Comment>
+      <DefaultExpression>b&apos;0&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>bit(1)|0s</StoredType>
+    </column>
+    <column id="925" parent="374" name="DeletedAt">
+      <Comment>Delete timestamp based on milliseconds</Comment>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="926" parent="374" name="DataChange_CreatedBy">
+      <Comment>创建人邮箱前缀</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="927" parent="374" name="DataChange_CreatedTime">
+      <Comment>创建时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="928" parent="374" name="DataChange_LastModifiedBy">
+      <Comment>最后修改人邮箱前缀</Comment>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <Position>8</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="929" parent="374" name="DataChange_LastTime">
+      <Comment>最后修改时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+      <Position>9</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="930" parent="374" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="931" parent="374" name="UK_UserId_RoleId_DeletedAt">
+      <ColNames>UserId
+RoleId
+DeletedAt</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="932" parent="374" name="IX_RoleId">
+      <ColNames>RoleId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="933" parent="374" name="IX_DataChange_LastTime">
+      <ColNames>DataChange_LastTime</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="934" parent="374" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="935" parent="374" name="UK_UserId_RoleId_DeletedAt">
+      <UnderlyingIndexName>UK_UserId_RoleId_DeletedAt</UnderlyingIndexName>
+    </key>
+    <column id="936" parent="375" name="Id">
+      <AutoIncrement>2</AutoIncrement>
+      <Comment>自增Id</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int unsigned|0s</StoredType>
+    </column>
+    <column id="937" parent="375" name="Username">
+      <Comment>用户登录账户</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="938" parent="375" name="Password">
+      <Comment>密码</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(512)|0s</StoredType>
+    </column>
+    <column id="939" parent="375" name="UserDisplayName">
+      <Comment>用户名称</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(512)|0s</StoredType>
+    </column>
+    <column id="940" parent="375" name="Email">
+      <Comment>邮箱地址</Comment>
+      <DefaultExpression>&apos;default&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="941" parent="375" name="Enabled">
+      <Comment>是否有效</Comment>
+      <Position>6</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <index id="942" parent="375" name="PRIMARY">
+      <ColNames>Id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="943" parent="375" name="UK_Username">
+      <ColNames>Username</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="944" parent="375" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="945" parent="375" name="UK_Username">
+      <UnderlyingIndexName>UK_Username</UnderlyingIndexName>
+    </key>
+    <argument id="946" parent="376" name="productName">
+      <Position>1</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </argument>
+    <argument id="947" parent="376" name="quantity">
+      <Position>2</Position>
+      <StoredType>int|0s</StoredType>
+    </argument>
+    <argument id="948" parent="376" name="orderNo">
+      <Position>3</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </argument>
+    <column id="949" parent="377" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="950" parent="377" name="order_no">
+      <DefaultExpression>&apos;aa&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="951" parent="377" name="user_id">
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>bigint|0s</StoredType>
+    </column>
+    <column id="952" parent="377" name="product_name">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="953" parent="377" name="price">
+      <DefaultExpression>0.00</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>decimal(10,2 digit)|0s</StoredType>
+    </column>
+    <column id="954" parent="377" name="quantity">
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="955" parent="377" name="total_amount">
+      <DefaultExpression>0.00</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StoredType>decimal(10,2 digit)|0s</StoredType>
+    </column>
+    <column id="956" parent="377" name="status">
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StoredType>tinyint|0s</StoredType>
+    </column>
+    <column id="957" parent="377" name="create_time">
+      <DefaultExpression>(now())</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StoredType>datetime|0s</StoredType>
+    </column>
+    <column id="958" parent="377" name="update_time">
+      <DefaultExpression>(now())</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StoredType>datetime|0s</StoredType>
+    </column>
+    <index id="959" parent="377" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="342" parent="336" name="PRIMARY">
+    <key id="960" parent="377" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

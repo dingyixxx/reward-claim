@@ -1,0 +1,72 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: module2-consumer
+  jmx:
+    enabled: false  # 完全禁用 JMX
+    application:
+      admin:
+        enabled: false # 禁用 Spring Boot Admin 自动注册
+  redis:
+    host: localhost
+    port: 6379
+    password: dingyixxx123
+    database: 0
+    timeout: 2000ms
+
+  # 库存数据库配置
+  datasource:
+    url: jdbc:mysql://192.168.50.116:3307/inventory_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  rabbitmq:
+    host: 192.168.200.131
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+        default-requeue-rejected: false  # 失败时不重新入队
+        concurrent-consumers: 1
+        max-concurrent-consumers: 1
+        retry:
+          enabled: true
+          max-attempts: 5  # 最多重试5次
+          initial-interval: 2000  # 初始间隔2秒
+          multiplier: 1.0  # 间隔倍数
+          max-interval: 30000   # 最大间隔30秒
+      # 死信队列配置
+      template:
+        exchange: order.exchange
+        routing-key: order.routing.key
+
+# MyBatis-Plus 配置
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: module2consumer.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    com.example: DEBUG
+    com.baomidou.mybatisplus: DEBUG
+    org.springframework.amqp: DEBUG
+    org.springframework.retry: DEBUG
+# RabbitMQ交换机和队列配置
+order:
+  exchange: order.exchange
+  queue: order.queue
+  routing-key: order.routing.key
+  dlx:
+    exchange: dlx.exchange
+    queue: dlx.queue
+    routing-key: dlx.routing.key

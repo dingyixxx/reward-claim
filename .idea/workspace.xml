@@ -5,29 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="add dubbo dynamic change service weight">
-      <change afterPath="$PROJECT_DIR$/sharding-elastic-job/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-elastic-job/src/main/java/org/example/ElasticApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-elastic-job/src/main/java/org/example/job/DataSyncJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-elastic-job/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apache-skywalking-java-agent-9.5.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apolloconfigdb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apolloportaldb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/Module1Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/EurekaServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/service/ProductDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/service/RabbitMQProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/service/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/Module2ConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/entity/InventoryMovement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/listener/DlxMessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/listener/ManualAckOrderListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/listener/RetryListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/mapper/InventoryMovementMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/service/InventoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/service/MessageDeduplicationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module2-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skywalking-agent.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/db-forest-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/db-forest-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-api/target/dubbo-api-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-api/target/dubbo-api-1.0.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-api/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-consumer/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +97,8 @@
     "Maven.dubbo-api [install].executor": "Run",
     "Maven.dubbo-consumer [clean].executor": "Run",
     "Maven.dubbo-provider [clean].executor": "Run",
+    "Maven.module1-controller [clean].executor": "Run",
+    "Maven.module2-consumer [clean].executor": "Run",
     "Maven.reward-claim [clean].executor": "Run",
     "Maven.reward-claim [compile].executor": "Run",
     "Maven.reward-claim [dependency:tree,-Dverbose...].executor": "Run",
@@ -102,6 +121,8 @@
     "Spring Boot.ElasticApplication=8093.executor": "Debug",
     "Spring Boot.ElasticApplication=8094.executor": "Debug",
     "Spring Boot.GatewayApplication.executor": "Debug",
+    "Spring Boot.Module1Application.executor": "Debug",
+    "Spring Boot.Module2ConsumerApplication.executor": "Debug",
     "Spring Boot.OrderApplication.executor": "Debug",
     "Spring Boot.ProviderApplication 20881.executor": "Debug",
     "Spring Boot.ProviderApplication 20882.executor": "Debug",
@@ -139,10 +160,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\P72\Desktop\reward-claim\orders-service\src\main\resources" />
-      <recent name="C:\Users\P72\Desktop\reward-claim\order-service\src\main\resources" />
-      <recent name="C:\Users\P72\Desktop\reward-claim\user-service\src\main\resources" />
-      <recent name="C:\Users\P72\Desktop\reward-claim\award-service\src\main\java\com\example" />
+      <recent name="C:\Users\P72\Desktop\reward-claim" />
+      <recent name="C:\Users\P72\Desktop\reward-claim\module2-consumer\src\main\resources" />
+      <recent name="C:\Users\P72\Desktop\reward-claim\module2-consumer\src\main\java" />
+      <recent name="C:\Users\P72\Desktop\reward-claim\module1-controller\src\main\resources" />
+      <recent name="C:\Users\P72\Desktop\reward-claim\module1-controller\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example" />
@@ -172,23 +194,15 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="AwardServiceApplication" value="STOPPED" />
-              <entry key="ConsumerApplication" value="STOPPED" />
-              <entry key="ElasticApplication" value="STOPPED" />
-              <entry key="ElasticApplication=8092" value="STOPPED" />
-              <entry key="GatewayApplication" value="STOPPED" />
-              <entry key="OrderApplication" value="STOPPED" />
-              <entry key="ProviderApplication" value="STOPPED" />
-              <entry key="ProviderApplication 20882" value="STOPPED" />
-              <entry key="UserApplication -weight3 51604" value="STOPPED" />
-              <entry key="UserApplication-51603" value="FAILED" />
+              <entry key="Module1Application" value="STOPPED" />
+              <entry key="Module2ConsumerApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ElasticApplication=8095">
+  <component name="RunManager" selected="Spring Boot.Module1Application">
     <configuration name="ElasticApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ElasticApplication" />
       <module name="sharding-elastic-job" />
@@ -292,6 +306,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Module1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="module1-controller" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="module1controller.Module1Application" />
+      <option name="VM_PARAMETERS" value="-javaagent:C:\Users\P72\Desktop\reward-claim\skywalking-agent.jar -Dskywalking.agent.service_name=producer-app -Dskywalking.collector.backend_service=192.168.200.131:11800" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Module2ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="module2-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="module2consumer.Module2ConsumerApplication" />
+      <option name="VM_PARAMETERS" value="-javaagent:C:\Users\P72\Desktop\reward-claim\skywalking-agent.jar -Dskywalking.agent.service_name=consumer-app -Dskywalking.collector.backend_service=192.168.200.131:11800" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="order-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.OrderApplication" />
@@ -337,6 +367,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.ElasticApplication" />
+      <item itemvalue="Spring Boot.Module1Application" />
+      <item itemvalue="Spring Boot.Module2ConsumerApplication" />
       <item itemvalue="Spring Boot.ConsumerApplication" />
       <item itemvalue="Spring Boot.ProviderApplication" />
       <item itemvalue="Spring Boot.ProviderApplication 20882" />
@@ -406,6 +438,7 @@
       <workItem from="1770736167403" duration="199000" />
       <workItem from="1770736391317" duration="224000" />
       <workItem from="1770736647323" duration="1240000" />
+      <workItem from="1770819943782" duration="32932000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>
