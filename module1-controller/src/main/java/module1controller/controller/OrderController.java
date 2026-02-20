@@ -100,7 +100,7 @@ public class OrderController {
     // 9. 测试接口 - 创建测试订单（完整版 - 包含所有功能）
     @PostMapping("/test/create")
     public Map<String, Object> createTestOrder() {
-        helloService.sayHello("chanchan228918298");
+//        helloService.sayHello("chanchan228918298");
         log.info("key1: " + key1);
         log.info("val1: " + val1);
         Map<String, Object> result = new HashMap<>();
@@ -112,93 +112,65 @@ public class OrderController {
             ExecutorService executorService = Executors.newFixedThreadPool(4);
 
 
-            System.out.println("--- 2. 并行执行百度搜索任务 ---");
-            List<Future<String>> futures = new ArrayList<>();
-            // 在 submit 前获取当前 trace 上下文
-            for (int i = 1; i <= 10; i++) {
-                final int taskId = i;
-                Future<String> future = executorService.submit(
-                        CallableWrapper.of( () -> {
-                            String keyword = "婵婵" + taskId;
-                            ActiveSpan.tag("taskId", keyword);
-                            // 在子线程中恢复上下文
-                            // 模拟百度搜索接口调用
-                            realBaiduSearch(keyword);
-                            return "任务 " + taskId + " 完成";
-                        }));
-                futures.add(future);
-            }
-
-            // 等待所有任务完成
-            for (Future<String> future : futures) {
-                try {
-                    String taskResult = future.get(); // 阻塞直到任务完成
-                    System.out.println(taskResult);
-                } catch (Exception e) {
-                    System.err.println("任务执行失败: " + e.getMessage());
-                }
-            }
-
-            // 关闭线程池
-            executorService.shutdown();
+//            executeBaiduSearchTasks(executorService);
             // 1. DB 写操作 - 创建订单
             System.out.println("--- 1. 创建订单 (DB写) ---");
             Order testOrder = new Order();
             // 让Service生成随机数据
             Order createdOrder = orderService.createOrderWithSleep(testOrder);
-            operations.put("1_db_write", Map.of(
-                    "success", true,
-                    "message", "订单创建成功",
-                    "order_id", createdOrder.getId(),
-                    "order_no", createdOrder.getOrderNo(),
-                    "product_name", createdOrder.getProductName(),
-                    "price", createdOrder.getPrice(),
-                    "quantity", createdOrder.getQuantity()
-            ));
-            System.out.println("订单创建成功: " + createdOrder.getOrderNo());
-
-            // 2. DB 读操作 - 查询刚创建的订单
-            System.out.println("--- 2. 查询订单 (DB读) ---");
-            Order retrievedOrder = orderService.selectByIdWithSleep(createdOrder.getId());
-            operations.put("2_db_read", Map.of(
-                    "success", true,
-                    "message", "订单查询成功",
-                    "order_data", Map.of(
-                            "id", retrievedOrder.getId(),
-                            "order_no", retrievedOrder.getOrderNo(),
-                            "product_name", retrievedOrder.getProductName(),
-                            "status", retrievedOrder.getStatus()
-                    )
-            ));
-            System.out.println("订单查询成功: " + retrievedOrder.getOrderNo());
-
-            // 3. Redis 写操作 - 缓存订单信息
-            System.out.println("--- 3. Redis写入 (缓存) ---");
-            String redisKey = "order:test:" + createdOrder.getId();
-            String redisValue = createdOrder.getOrderNo() + "|" + createdOrder.getProductName();
-            redisService.setValueWithExpire(redisKey, redisValue, 300L, TimeUnit.SECONDS);
-
-            // 验证 Redis 写入
-            String verifyValue = redisService.getValue(redisKey);
-            operations.put("3_redis_write", Map.of(
-                    "success", verifyValue != null && verifyValue.equals(redisValue),
-                    "message", verifyValue != null ? "Redis写入验证成功" : "Redis写入验证失败",
-                    "key", redisKey,
-                    "value", redisValue,
-                    "verified_value", verifyValue
-            ));
-            System.out.println("Redis写入: " + redisKey + " = " + redisValue);
-
-            // 4. Redis 读操作 - 读取缓存
-            System.out.println("--- 4. Redis读取 (缓存) ---");
-            String redisReadValue = redisService.getValue(redisKey);
-            operations.put("4_redis_read", Map.of(
-                    "success", redisReadValue != null,
-                    "message", redisReadValue != null ? "Redis读取成功" : "Redis读取失败",
-                    "key", redisKey,
-                    "value", redisReadValue
-            ));
-            System.out.println("Redis读取: " + redisKey + " = " + redisReadValue);
+//            operations.put("1_db_write", Map.of(
+//                    "success", true,
+//                    "message", "订单创建成功",
+//                    "order_id", createdOrder.getId(),
+//                    "order_no", createdOrder.getOrderNo(),
+//                    "product_name", createdOrder.getProductName(),
+//                    "price", createdOrder.getPrice(),
+//                    "quantity", createdOrder.getQuantity()
+//            ));
+//            System.out.println("订单创建成功: " + createdOrder.getOrderNo());
+//
+//            // 2. DB 读操作 - 查询刚创建的订单
+//            System.out.println("--- 2. 查询订单 (DB读) ---");
+//            Order retrievedOrder = orderService.selectByIdWithSleep(createdOrder.getId());
+//            operations.put("2_db_read", Map.of(
+//                    "success", true,
+//                    "message", "订单查询成功",
+//                    "order_data", Map.of(
+//                            "id", retrievedOrder.getId(),
+//                            "order_no", retrievedOrder.getOrderNo(),
+//                            "product_name", retrievedOrder.getProductName(),
+//                            "status", retrievedOrder.getStatus()
+//                    )
+//            ));
+//            System.out.println("订单查询成功: " + retrievedOrder.getOrderNo());
+//
+//            // 3. Redis 写操作 - 缓存订单信息
+//            System.out.println("--- 3. Redis写入 (缓存) ---");
+//            String redisKey = "order:test:" + createdOrder.getId();
+//            String redisValue = createdOrder.getOrderNo() + "|" + createdOrder.getProductName();
+//            redisService.setValueWithExpire(redisKey, redisValue, 300L, TimeUnit.SECONDS);
+//
+//            // 验证 Redis 写入
+//            String verifyValue = redisService.getValue(redisKey);
+//            operations.put("3_redis_write", Map.of(
+//                    "success", verifyValue != null && verifyValue.equals(redisValue),
+//                    "message", verifyValue != null ? "Redis写入验证成功" : "Redis写入验证失败",
+//                    "key", redisKey,
+//                    "value", redisValue,
+//                    "verified_value", verifyValue
+//            ));
+//            System.out.println("Redis写入: " + redisKey + " = " + redisValue);
+//
+//            // 4. Redis 读操作 - 读取缓存
+//            System.out.println("--- 4. Redis读取 (缓存) ---");
+//            String redisReadValue = redisService.getValue(redisKey);
+//            operations.put("4_redis_read", Map.of(
+//                    "success", redisReadValue != null,
+//                    "message", redisReadValue != null ? "Redis读取成功" : "Redis读取失败",
+//                    "key", redisKey,
+//                    "value", redisReadValue
+//            ));
+//            System.out.println("Redis读取: " + redisKey + " = " + redisReadValue);
 
             // 5. 发送 RabbitMQ 消息
             System.out.println("--- 5. 发送RabbitMQ消息 ---");
@@ -259,6 +231,38 @@ public class OrderController {
         }
 
         return result;
+    }
+
+    private void executeBaiduSearchTasks(ExecutorService executorService) {
+        System.out.println("--- 2. 并行执行百度搜索任务 ---");
+        List<Future<String>> futures = new ArrayList<>();
+        // 在 submit 前获取当前 trace 上下文
+        for (int i = 1; i <= 10; i++) {
+            final int taskId = i;
+            Future<String> future = executorService.submit(
+                    CallableWrapper.of( () -> {
+                        String keyword = "婵婵" + taskId;
+                        ActiveSpan.tag("taskId", keyword);
+                        // 在子线程中恢复上下文
+                        // 模拟百度搜索接口调用
+                        realBaiduSearch(keyword);
+                        return "任务 " + taskId + " 完成";
+                    }));
+            futures.add(future);
+        }
+
+        // 等待所有任务完成
+        for (Future<String> future : futures) {
+            try {
+                String taskResult = future.get(); // 阻塞直到任务完成
+                System.out.println(taskResult);
+            } catch (Exception e) {
+                System.err.println("任务执行失败: " + e.getMessage());
+            }
+        }
+
+        // 关闭线程池
+        executorService.shutdown();
     }
 
 

@@ -41,6 +41,7 @@ spring:
           initial-interval: 2000  # 初始间隔2秒
           multiplier: 1.0  # 间隔倍数
           max-interval: 30000   # 最大间隔30秒
+
       # 死信队列配置
       template:
         exchange: order.exchange
@@ -61,6 +62,7 @@ logging:
     com.baomidou.mybatisplus: DEBUG
     org.springframework.amqp: DEBUG
     org.springframework.retry: DEBUG
+    module2consumer.listener.ManualAckOrderListener: DEBUG  # ← 这会导致 ERROR 不输出！
 # RabbitMQ交换机和队列配置
 order:
   exchange: order.exchange

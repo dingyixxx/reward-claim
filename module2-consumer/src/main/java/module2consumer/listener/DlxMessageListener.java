@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 public class DlxMessageListener {
-    @RabbitListener(queues = "dlx.queue")
+//    @RabbitListener(queues = "dlx.queue")
     public void handleDeadLetterMessage(Message message) {
         log.error("=== 💀 接收到死信消息 ===");
         log.error("消息内容: {}", new String(message.getBody()));

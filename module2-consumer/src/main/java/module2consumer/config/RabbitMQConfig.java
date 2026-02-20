@@ -2,12 +2,15 @@ package module2consumer.config;
 
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.AmqpRejectAndDontRequeueException;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.amqp.rabbit.listener.RabbitListenerContainerFactory;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -52,11 +55,6 @@ public class RabbitMQConfig {
         return BindingBuilder.bind(dlxQueue()).to(dlxExchange()).with(dlxRoutingKey);
     }
 
-
-
-
-
-
     // 带死信配置的订单队列
     @Bean
     public Queue orderQueue() {
@@ -92,4 +90,5 @@ public class RabbitMQConfig {
         template.setMessageConverter(new Jackson2JsonMessageConverter());
         return template;
     }
+
 }
