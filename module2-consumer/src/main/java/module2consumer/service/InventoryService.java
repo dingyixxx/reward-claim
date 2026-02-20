@@ -1,8 +1,8 @@
 package module2consumer.service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.example.entity.InventoryMovement;
 import lombok.extern.slf4j.Slf4j;
-import module2consumer.entity.InventoryMovement;
 import module2consumer.mapper.InventoryMovementMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

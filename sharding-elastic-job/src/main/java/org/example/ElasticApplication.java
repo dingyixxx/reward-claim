@@ -10,5 +10,6 @@ public class ElasticApplication {
         Class<?> clazz = org.yaml.snakeyaml.Yaml.class;
         System.out.println("SnakeYAML loaded from: " + clazz.getProtectionDomain().getCodeSource());
         SpringApplication.run(ElasticApplication.class, args);
+//        -Dserver.port=8094
     }
 }

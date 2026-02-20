@@ -13,5 +13,7 @@ public class Module2ConsumerApplication {
         System.out.println("=== 模块2消费者服务启动成功 ===");
         System.out.println("正在监听 RabbitMQ 消息...");
     }
-
+//    -javaagent:C:\Users\P72\Downloads\skywalking-agent\skywalking-agent.jar
+//-Dskywalking.agent.service_name=consumer-app
+//-Dskywalking.collector.backend_service=192.168.200.131:11800
 }

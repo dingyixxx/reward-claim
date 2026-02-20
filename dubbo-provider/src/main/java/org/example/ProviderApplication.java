@@ -16,3 +16,6 @@ public class ProviderApplication {
         SpringApplication.run(ProviderApplication.class, args);
     }
 }
+//    -javaagent:C:\Users\P72\Downloads\skywalking-agent\skywalking-agent.jar
+//-Dskywalking.agent.service_name=dubbo-provider-inventory-service
+//-Dskywalking.collector.backend_service=192.168.200.131:11800

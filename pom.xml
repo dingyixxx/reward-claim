@@ -190,11 +190,17 @@
                 <artifactId>curator-x-discovery</artifactId>
                 <version>5.5.0</version>
             </dependency>
-
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
+                <scope>provided</scope>
                 <version>1.18.38</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-core</artifactId>
+                <version>3.5.3.1</version>
+                <!-- 不要 starter -->
             </dependency>
             <!-- Dubbo ZooKeeper 配置中心支持 -->
             <dependency>
@@ -249,6 +255,12 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>1.2.11</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-annotation</artifactId>
+                <version>3.5.6</version>
+                <scope>compile</scope>
             </dependency>
             <dependency>
                 <groupId>org.apache.skywalking</groupId>

@@ -1,7 +1,6 @@
 package module1controller.controller;
 
 
-
 import io.lettuce.core.tracing.Tracer;
 import lombok.extern.slf4j.Slf4j;
 import module1controller.entity.Order;
@@ -46,10 +45,8 @@ public class OrderController {
     @Autowired
     private RabbitMQProducerService rabbitMQProducerService;
 
-    @DubboReference(version = "1.0.0", loadbalance = "random",group = "dingyi") // 支持权重
+    @DubboReference(version = "1.0.0", loadbalance = "random", group = "dingyi") // 支持权重
     private HelloService helloService;
-
-
 
 
     @Value("${key:defaultkey100}")
@@ -70,8 +67,10 @@ public class OrderController {
             System.err.println("搜索任务被中断: " + keyword);
         }
     }
+
     @Autowired
     private RestTemplate restTemplate; // 需确保已配置（见下方）
+
     // 真实调用百度搜索接口
     private void realBaiduSearch(String keyword) {
         try {
@@ -93,6 +92,61 @@ public class OrderController {
             Thread.currentThread().interrupt();
             System.err.println("搜索任务异常: " + keyword + ", 错误信息: " + e.getMessage());
         }
+    }
+
+
+    @PostMapping("/test/seata-create")
+    public Map<String, Object> createTestOrderSeata() {
+        System.out.println("=== 测试Seata分布式事务 ===");
+
+        Map<String, Object> result = new HashMap<>();
+        Map<String, Object> operations = new HashMap<>();
+
+        try {
+            System.out.println("=== 开始完整测试流程 ===");
+
+            // 1. DB 写操作 - 创建订单
+            System.out.println("--- 1. 创建订单 (DB写) ---");
+            Order testOrder = new Order();
+            // 让Service生成随机数据
+            Order createdOrder = orderService.createOrderWithSleep(testOrder);
+            operations.put("1_db_write", Map.of(
+                    "success", true,
+                    "message", "订单创建成功",
+                    "order_id", createdOrder.getId(),
+                    "order_no", createdOrder.getOrderNo(),
+                    "product_name", createdOrder.getProductName(),
+                    "price", createdOrder.getPrice(),
+                    "quantity", createdOrder.getQuantity()
+            ));
+            System.out.println("订单创建成功: " + createdOrder.getOrderNo());
+
+
+            helloService.updateInventory(createdOrder.getId(), createdOrder.getOrderNo(), createdOrder.getProductName(), createdOrder.getUserId(), createdOrder.getQuantity());
+            log.info("更新库存成功: 订单ID={}, 订单号={}, 商品名称={}, 用户ID={}, 数量={}", createdOrder.getId(), createdOrder.getOrderNo(), createdOrder.getProductName(), createdOrder.getUserId(), createdOrder.getQuantity());
+            // 构建最终结果
+            result.put("success", true);
+            result.put("message", "完整测试流程执行成功");
+            result.put("operations", operations);
+            result.put("summary", Map.of(
+                    "total_operations", 7,
+                    "successful_operations", operations.size(),
+                    "test_order_id", createdOrder.getId(),
+                    "test_order_no", createdOrder.getOrderNo(),
+                    "test_product", createdOrder.getProductName(),
+                    "test_amount", createdOrder.getTotalAmount()
+            ));
+
+            System.out.println("=== 完整测试流程完成 ===");
+
+        } catch (Exception e) {
+            System.err.println("完整测试流程异常: " + e.getMessage());
+            e.printStackTrace();
+            result.put("success", false);
+            result.put("message", "完整测试流程执行失败: " + e.getMessage());
+            result.put("operations", operations);
+        }
+        return result;
     }
 
     // 9. 测试接口 - 创建测试订单
@@ -118,59 +172,59 @@ public class OrderController {
             Order testOrder = new Order();
             // 让Service生成随机数据
             Order createdOrder = orderService.createOrderWithSleep(testOrder);
-//            operations.put("1_db_write", Map.of(
-//                    "success", true,
-//                    "message", "订单创建成功",
-//                    "order_id", createdOrder.getId(),
-//                    "order_no", createdOrder.getOrderNo(),
-//                    "product_name", createdOrder.getProductName(),
-//                    "price", createdOrder.getPrice(),
-//                    "quantity", createdOrder.getQuantity()
-//            ));
-//            System.out.println("订单创建成功: " + createdOrder.getOrderNo());
-//
-//            // 2. DB 读操作 - 查询刚创建的订单
-//            System.out.println("--- 2. 查询订单 (DB读) ---");
-//            Order retrievedOrder = orderService.selectByIdWithSleep(createdOrder.getId());
-//            operations.put("2_db_read", Map.of(
-//                    "success", true,
-//                    "message", "订单查询成功",
-//                    "order_data", Map.of(
-//                            "id", retrievedOrder.getId(),
-//                            "order_no", retrievedOrder.getOrderNo(),
-//                            "product_name", retrievedOrder.getProductName(),
-//                            "status", retrievedOrder.getStatus()
-//                    )
-//            ));
-//            System.out.println("订单查询成功: " + retrievedOrder.getOrderNo());
-//
-//            // 3. Redis 写操作 - 缓存订单信息
-//            System.out.println("--- 3. Redis写入 (缓存) ---");
-//            String redisKey = "order:test:" + createdOrder.getId();
-//            String redisValue = createdOrder.getOrderNo() + "|" + createdOrder.getProductName();
-//            redisService.setValueWithExpire(redisKey, redisValue, 300L, TimeUnit.SECONDS);
-//
-//            // 验证 Redis 写入
-//            String verifyValue = redisService.getValue(redisKey);
-//            operations.put("3_redis_write", Map.of(
-//                    "success", verifyValue != null && verifyValue.equals(redisValue),
-//                    "message", verifyValue != null ? "Redis写入验证成功" : "Redis写入验证失败",
-//                    "key", redisKey,
-//                    "value", redisValue,
-//                    "verified_value", verifyValue
-//            ));
-//            System.out.println("Redis写入: " + redisKey + " = " + redisValue);
-//
-//            // 4. Redis 读操作 - 读取缓存
-//            System.out.println("--- 4. Redis读取 (缓存) ---");
-//            String redisReadValue = redisService.getValue(redisKey);
-//            operations.put("4_redis_read", Map.of(
-//                    "success", redisReadValue != null,
-//                    "message", redisReadValue != null ? "Redis读取成功" : "Redis读取失败",
-//                    "key", redisKey,
-//                    "value", redisReadValue
-//            ));
-//            System.out.println("Redis读取: " + redisKey + " = " + redisReadValue);
+            operations.put("1_db_write", Map.of(
+                    "success", true,
+                    "message", "订单创建成功",
+                    "order_id", createdOrder.getId(),
+                    "order_no", createdOrder.getOrderNo(),
+                    "product_name", createdOrder.getProductName(),
+                    "price", createdOrder.getPrice(),
+                    "quantity", createdOrder.getQuantity()
+            ));
+            System.out.println("订单创建成功: " + createdOrder.getOrderNo());
+
+            // 2. DB 读操作 - 查询刚创建的订单
+            System.out.println("--- 2. 查询订单 (DB读) ---");
+            Order retrievedOrder = orderService.selectByIdWithSleep(createdOrder.getId());
+            operations.put("2_db_read", Map.of(
+                    "success", true,
+                    "message", "订单查询成功",
+                    "order_data", Map.of(
+                            "id", retrievedOrder.getId(),
+                            "order_no", retrievedOrder.getOrderNo(),
+                            "product_name", retrievedOrder.getProductName(),
+                            "status", retrievedOrder.getStatus()
+                    )
+            ));
+            System.out.println("订单查询成功: " + retrievedOrder.getOrderNo());
+
+            // 3. Redis 写操作 - 缓存订单信息
+            System.out.println("--- 3. Redis写入 (缓存) ---");
+            String redisKey = "order:test:" + createdOrder.getId();
+            String redisValue = createdOrder.getOrderNo() + "|" + createdOrder.getProductName();
+            redisService.setValueWithExpire(redisKey, redisValue, 300L, TimeUnit.SECONDS);
+
+            // 验证 Redis 写入
+            String verifyValue = redisService.getValue(redisKey);
+            operations.put("3_redis_write", Map.of(
+                    "success", verifyValue != null && verifyValue.equals(redisValue),
+                    "message", verifyValue != null ? "Redis写入验证成功" : "Redis写入验证失败",
+                    "key", redisKey,
+                    "value", redisValue,
+                    "verified_value", verifyValue
+            ));
+            System.out.println("Redis写入: " + redisKey + " = " + redisValue);
+
+            // 4. Redis 读操作 - 读取缓存
+            System.out.println("--- 4. Redis读取 (缓存) ---");
+            String redisReadValue = redisService.getValue(redisKey);
+            operations.put("4_redis_read", Map.of(
+                    "success", redisReadValue != null,
+                    "message", redisReadValue != null ? "Redis读取成功" : "Redis读取失败",
+                    "key", redisKey,
+                    "value", redisReadValue
+            ));
+            System.out.println("Redis读取: " + redisKey + " = " + redisReadValue);
 
             // 5. 发送 RabbitMQ 消息
             System.out.println("--- 5. 发送RabbitMQ消息 ---");
@@ -179,7 +233,7 @@ public class OrderController {
             operations.put("5_rabbitmq_send", Map.of(
                     "success", true,
                     "message", "RabbitMQ消息发送成功",
-                    "message_content",createdOrder.toString()
+                    "message_content", createdOrder.toString()
             ));
             System.out.println("RabbitMQ消息发送成功");
 
@@ -240,7 +294,7 @@ public class OrderController {
         for (int i = 1; i <= 10; i++) {
             final int taskId = i;
             Future<String> future = executorService.submit(
-                    CallableWrapper.of( () -> {
+                    CallableWrapper.of(() -> {
                         String keyword = "婵婵" + taskId;
                         ActiveSpan.tag("taskId", keyword);
                         // 在子线程中恢复上下文
@@ -269,11 +323,16 @@ public class OrderController {
     // 辅助方法：获取订单状态文本
     private String getOrderStatusText(Integer status) {
         switch (status) {
-            case 0: return "待支付";
-            case 1: return "已支付";
-            case 2: return "已完成";
-            case 3: return "已取消";
-            default: return "未知状态";
+            case 0:
+                return "待支付";
+            case 1:
+                return "已支付";
+            case 2:
+                return "已完成";
+            case 3:
+                return "已取消";
+            default:
+                return "未知状态";
         }
     }
 
@@ -281,6 +340,7 @@ public class OrderController {
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
+
     @GetMapping("/test-dlx")
     public String testDeadLetter() {
         // 发送一条5秒后过期的消息
@@ -294,6 +354,7 @@ public class OrderController {
         rabbitTemplate.send("", "order.queue", mqMessage);
         return "已发送测试消息，5秒后应进入死信队列";
     }
+
     @GetMapping("/check-queues")
     public Map<String, Object> checkQueueStatus() {
         Map<String, Object> result = new HashMap<>();

@@ -5,207 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="add dubbo dynamic change service weight">
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/activations/apm-toolkit-kafka-activation-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/activations/apm-toolkit-log4j-1.x-activation-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/activations/apm-toolkit-log4j-2.x-activation-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/activations/apm-toolkit-logback-1.x-activation-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/activations/apm-toolkit-logging-common-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/activations/apm-toolkit-meter-activation-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/activations/apm-toolkit-micrometer-activation-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/activations/apm-toolkit-opentracing-activation-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/activations/apm-toolkit-trace-activation-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/activations/apm-toolkit-webflux-activation-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/bootstrap-plugins/apm-jdk-forkjoinpool-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/bootstrap-plugins/apm-jdk-http-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/bootstrap-plugins/apm-jdk-threading-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/bootstrap-plugins/apm-jdk-threadpool-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/bootstrap-plugins/apm-jdk-virtual-thread-executor-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/config/agent.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/expired-plugins/apm-impala-jdbc-2.6.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/licenses/LICENSE-asm.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-caffeine-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-customize-enhance-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-ehcache-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-fastjson-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-gson-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-guava-cache-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-jackson-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-kotlin-coroutine-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-mybatis-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-nacos-client-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-netty-http-4.1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-quartz-scheduler-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-resttemplate-6.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-sentinel-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-shenyu-2.4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-spring-annotation-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-spring-cloud-gateway-2.0.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-spring-cloud-gateway-2.1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-spring-cloud-gateway-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-spring-cloud-gateway-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-spring-tx-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-spring-webflux-5.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-spring-webflux-6.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-springmvc-annotation-6.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-trace-ignore-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/apm-zookeeper-3.4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-plugins/trace-sampler-cpu-policy-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-reporter-plugins/kafka-reporter-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-reporter-plugins/lz4-java-1.6.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-reporter-plugins/snappy-java-1.1.7.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/optional-reporter-plugins/zstd-jni-1.4.3-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-activemq-5.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-activemq-artemis-jakarta-client-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-aerospike-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-armeria-0.84.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-armeria-0.85.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-armeria-1.0.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-asynchttpclient-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-avro-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-c3p0-0.9.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-canal-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-cassandra-java-driver-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-clickhouse-0.3.1-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-clickhouse-0.3.2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-cxf-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-dubbo-2.7.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-dubbo-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-dubbo-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-elastic-job-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-elasticjob-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-elasticsearch-5.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-elasticsearch-6.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-elasticsearch-7.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-feign-default-http-9.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-finagle-6.25.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-grizzly-2.x-4.x-work-threadpool-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-grizzly-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-grpc-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-guava-eventbus-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-h2-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-hbase-1.x-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-hikaricp-3.x-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-httpClient-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-httpasyncclient-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-httpclient-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-httpclient-5.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-httpclient-commons-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-hutool-http-5.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-hystrix-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-influxdb-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-jdbc-commons-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-jersey-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-jersey-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-jetty-client-11.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-jetty-client-9.0-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-jetty-client-9.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-jetty-server-11.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-jetty-server-9.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-jetty-thread-pool-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-kafka-commons-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-kafka-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-kylin-jdbc-2.6.x-3.x-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-lettuce-5.x-6.4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-lettuce-6.5.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-lettuce-common-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-light4j-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-mariadb-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-mongodb-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-mongodb-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-mongodb-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-mssql-commons-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-mssql-jdbc-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-mssql-jtds-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-mysql-5.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-mysql-6.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-mysql-8.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-mysql-commons-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-neo4j-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-netty-socketio-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-nutz-http-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-nutz-mvc-annotation-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-okhttp-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-okhttp-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-okhttp-common-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-play-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-postgresql-8.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-pulsar-2.2-2.7-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-pulsar-2.8.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-pulsar-common-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-quasar-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-rabbitmq-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-redisson-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-resttemplate-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-resttemplate-4.3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-rocketMQ-5.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-rocketmq-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-rocketmq-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-rocketmq-client-java-5.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-servicecomb-java-chassis-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-sharding-sphere-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-sharding-sphere-4.1.0-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-shardingsphere-4.0.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-shardingsphere-5.0.0-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-solrj-7.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-spring-async-annotation-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-spring-cloud-feign-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-spring-cloud-feign-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-spring-concurrent-util-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-spring-core-patch-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-spring-kafka-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-spring-kafka-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-spring-scheduled-annotation-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-springmvc-annotation-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-springmvc-annotation-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-springmvc-annotation-5.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-springmvc-annotation-commons-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-spymemcached-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-struts2-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-tomcat-thread-pool-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-undertow-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-undertow-worker-thread-pool-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-vertx-core-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-vertx-core-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-xmemcached-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/apm-xxl-job-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/baidu-brpc-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/baidu-brpc-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/dbcp-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/druid-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/dubbo-2.7.x-conflict-patch-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/dubbo-3.x-conflict-patch-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/dubbo-conflict-patch-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/elasticsearch-common-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/graphql-12.x-15.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/graphql-16plus-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/graphql-8.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/graphql-9.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/jedis-2.x-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/jedis-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/jsonrpc4j-1.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/micronaut-http-client-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/micronaut-http-server-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/motan-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/nats-2.14.x-2.16.5-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/okhttp-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/resteasy-server-3.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/resteasy-server-4.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/resteasy-server-6.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/resttemplate-commons-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/sofa-rpc-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/solon-2.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/spring-commons-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/spring-webflux-5.x-webclient-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/spring-webflux-6.x-webclient-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/thrift-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/tomcat-10x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/tomcat-7.x-8.x-plugin-9.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skywalking-agent/plugins/websphere-liberty-23.x-plugin-9.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/entity/TestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/mapper/InventoryMovementMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apache-skywalking-java-agent-9.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skywalking-agent.jar" beforeDir="false" afterPath="$PROJECT_DIR$/skywalking-agent/skywalking-agent.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-api/src/main/java/org/example/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-api/src/main/java/org/example/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/ProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/ProviderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/Module2ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/Module2ConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/entity/InventoryMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/entity/InventoryMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/mapper/InventoryMovementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/mapper/InventoryMovementMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/service/InventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sharding-elastic-job/src/main/java/org/example/ElasticApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sharding-elastic-job/src/main/java/org/example/ElasticApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,12 +70,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ElasticApplication.executor": "Debug",
+    "Maven.common [clean].executor": "Run",
+    "Maven.common [install].executor": "Run",
+    "Maven.common [package].executor": "Run",
     "Maven.dubbo-api [clean].executor": "Run",
     "Maven.dubbo-api [install].executor": "Run",
     "Maven.dubbo-consumer [clean].executor": "Run",
     "Maven.dubbo-provider [clean].executor": "Run",
     "Maven.module1-controller [clean].executor": "Run",
+    "Maven.module1-controller [compile].executor": "Run",
+    "Maven.module1-controller [package].executor": "Run",
     "Maven.module2-consumer [clean].executor": "Run",
+    "Maven.module2-consumer [package].executor": "Run",
     "Maven.reward-claim [clean].executor": "Run",
     "Maven.reward-claim [compile].executor": "Run",
     "Maven.reward-claim [dependency:tree,-Dverbose...].executor": "Run",
@@ -279,7 +102,7 @@
     "Spring Boot.ElasticApplication.executor": "Debug",
     "Spring Boot.ElasticApplication=8092.executor": "Debug",
     "Spring Boot.ElasticApplication=8093.executor": "Debug",
-    "Spring Boot.ElasticApplication=8094.executor": "Debug",
+    "Spring Boot.ElasticApplication=8094.executor": "Run",
     "Spring Boot.GatewayApplication.executor": "Debug",
     "Spring Boot.Module1Application.executor": "Debug",
     "Spring Boot.Module2ConsumerApplication.executor": "Debug",
@@ -294,7 +117,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/P72/Desktop/reward-claim",
+    "last_opened_file_path": "C:/Users/P72/Desktop/reward-claim/dubbo-provider/src/main/java/org/example",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -320,11 +143,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\P72\Desktop\reward-claim\dubbo-provider\src\main\java\org\example" />
       <recent name="C:\Users\P72\Desktop\reward-claim" />
       <recent name="C:\Users\P72\Desktop\reward-claim\module2-consumer\src\main\resources" />
       <recent name="C:\Users\P72\Desktop\reward-claim\module2-consumer\src\main\java" />
       <recent name="C:\Users\P72\Desktop\reward-claim\module1-controller\src\main\resources" />
-      <recent name="C:\Users\P72\Desktop\reward-claim\module1-controller\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example" />
@@ -355,22 +178,23 @@
           <value>
             <map>
               <entry key="ConsumerApplication" value="STOPPED" />
+              <entry key="ElasticApplication=8094" value="STOPPED" />
               <entry key="Module1Application" value="STOPPED" />
               <entry key="Module2ConsumerApplication" value="STOPPED" />
-              <entry key="ProviderApplication" value="STOPPED" />
+              <entry key="ProviderApplication" value="FAILED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProviderApplication">
+  <component name="RunManager" selected="Spring Boot.Module2ConsumerApplication">
     <configuration name="ElasticApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ElasticApplication" />
       <module name="sharding-elastic-job" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="com.example.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -508,6 +332,7 @@
     <configuration name="ProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="dubbo-provider" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.ProviderApplication" />
+      <option name="VM_PARAMETERS" value="-javaagent:C:\Users\P72\Downloads\skywalking-agent\skywalking-agent.jar -Dskywalking.agent.service_name=dubbo-provider-inventory-service -Dskywalking.collector.backend_service=192.168.200.131:11800" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -600,7 +425,7 @@
       <workItem from="1770736167403" duration="199000" />
       <workItem from="1770736391317" duration="224000" />
       <workItem from="1770736647323" duration="1240000" />
-      <workItem from="1770819943782" duration="48233000" />
+      <workItem from="1770819943782" duration="53300000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>

@@ -19,3 +19,34 @@ dubbo:
     address: zookeeper://192.168.200.131:2181
   provider:
     weight: 100  # 初始权重（可通过配置或动态修改）
+
+server:
+  port: 8089
+
+
+spring:
+  application:
+    name: dubbo-provider-inventory-service
+  jmx:
+    enabled: false  # 完全禁用 JMX
+    application:
+      admin:
+        enabled: false # 禁用 Spring Boot Admin 自动注册
+
+
+  # 库存数据库配置
+  datasource:
+    url: jdbc:mysql://192.168.50.116:3307/inventory_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+# MyBatis-Plus 配置
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: module2consumer.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
