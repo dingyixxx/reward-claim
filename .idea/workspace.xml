@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="add dubbo dynamic change service weight">
-      <change afterPath="$PROJECT_DIR$/img_11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/config/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/listener/DlxMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/listener/DlxMessageListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/listener/ManualAckOrderListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/listener/ManualAckOrderListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -406,7 +400,7 @@
       <workItem from="1770736167403" duration="199000" />
       <workItem from="1770736391317" duration="224000" />
       <workItem from="1770736647323" duration="1240000" />
-      <workItem from="1770819943782" duration="46956000" />
+      <workItem from="1770819943782" duration="47118000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>
