@@ -23,6 +23,7 @@
         <module>sharding-elastic-job</module>
         <module>module1-controller</module>
         <module>module2-consumer</module>
+        <module>canal-tcp-client-listener</module>
     </modules>
 
 
@@ -302,6 +303,17 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
                 <version>3.1.4</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.otter</groupId>
+                <artifactId>canal.client</artifactId>
+                <version>1.1.7</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.otter</groupId>
+                <artifactId>canal.protocol</artifactId>
+                <version>1.1.7</version>
             </dependency>
 
         </dependencies>

@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="add dubbo dynamic change service weight">
-      <change afterPath="$PROJECT_DIR$/img_12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/undolog.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canal-tcp-client-listener/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canal-tcp-client-listener/src/main/java/CanalTcpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CanalTcpTest.executor": "Debug",
     "Application.ElasticApplication.executor": "Debug",
     "Maven.common [clean].executor": "Run",
     "Maven.common [install].executor": "Run",
@@ -163,6 +163,13 @@
     </option>
     <option name="configurationStatuses">
       <map>
+        <entry key="Application">
+          <value>
+            <map>
+              <entry key="CanalTcpTest" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
@@ -177,7 +184,14 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Module2ConsumerApplication">
+  <component name="RunManager" selected="Application.CanalTcpTest">
+    <configuration name="CanalTcpTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CanalTcpTest" />
+      <module name="canal-tcp-client-listener" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ElasticApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ElasticApplication" />
       <module name="sharding-elastic-job" />
@@ -274,13 +288,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gateway-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.GatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Module1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="module1-controller" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="module1controller.Module1Application" />
@@ -342,6 +349,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.CanalTcpTest" />
       <item itemvalue="Application.ElasticApplication" />
       <item itemvalue="Spring Boot.Module1Application" />
       <item itemvalue="Spring Boot.Module2ConsumerApplication" />
@@ -357,15 +365,14 @@
       <item itemvalue="Spring Boot.ElasticApplication" />
       <item itemvalue="Spring Boot.OrderApplication" />
       <item itemvalue="Spring Boot.AwardServiceApplication" />
-      <item itemvalue="Spring Boot.GatewayApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CanalTcpTest" />
         <item itemvalue="Spring Boot.ElasticApplication" />
         <item itemvalue="Application.ElasticApplication" />
         <item itemvalue="Spring Boot.OrderApplication" />
         <item itemvalue="Spring Boot.AwardServiceApplication" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -414,7 +421,7 @@
       <workItem from="1770736167403" duration="199000" />
       <workItem from="1770736391317" duration="224000" />
       <workItem from="1770736647323" duration="1240000" />
-      <workItem from="1770819943782" duration="78301000" />
+      <workItem from="1770819943782" duration="80114000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>

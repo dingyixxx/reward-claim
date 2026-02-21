@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/award-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/award-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/canal-tcp-client-listener/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-consumer/src/main/java" charset="UTF-8" />

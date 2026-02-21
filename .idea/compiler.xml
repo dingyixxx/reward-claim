@@ -7,14 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="canal-tcp-client-listener" />
+        <module name="module2-consumer" />
+        <module name="user-service" />
+        <module name="award-service" />
+        <module name="feign-api" />
         <module name="common" />
         <module name="gateway-service" />
         <module name="dubbo-provider" />
-        <module name="module2-consumer" />
-        <module name="user-service" />
         <module name="order-service" />
-        <module name="award-service" />
-        <module name="feign-api" />
         <module name="sharding-elastic-job" />
         <module name="dubbo-api" />
         <module name="dubbo-consumer" />
@@ -28,6 +29,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="award-service" options="-parameters" />
+      <module name="canal-tcp-client-listener" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="dubbo-api" options="-parameters" />
       <module name="dubbo-consumer" options="-parameters" />
