@@ -110,4 +110,6 @@ canal-server的rabbitMq模式
 
 
 
+canal的tcp模式
 
+![img_13.png](img_13.png)
