@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="add dubbo dynamic change service weight">
-      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/file.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/registry.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/service/SeataOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/resources/file.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/resources/registry.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/undolog.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/HelloServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +170,7 @@
               <entry key="ElasticApplication=8094" value="STOPPED" />
               <entry key="Module1Application" value="STOPPED" />
               <entry key="Module2ConsumerApplication" value="STOPPED" />
-              <entry key="ProviderApplication" value="FAILED" />
+              <entry key="ProviderApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -426,7 +414,7 @@
       <workItem from="1770736167403" duration="199000" />
       <workItem from="1770736391317" duration="224000" />
       <workItem from="1770736647323" duration="1240000" />
-      <workItem from="1770819943782" duration="65708000" />
+      <workItem from="1770819943782" duration="78301000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>

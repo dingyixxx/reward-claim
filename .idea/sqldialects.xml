@@ -12,7 +12,11 @@
     <file url="file://$PROJECT_DIR$/.idea/queries/Query_16.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/.idea/queries/Query_17.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/.idea/queries/Query_18.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/.idea/queries/Query_19.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/.idea/queries/Query_2.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/.idea/queries/Query_20.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/.idea/queries/Query_21.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/.idea/queries/Query_22.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/.idea/queries/Query_3.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/.idea/queries/Query_4.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/.idea/queries/Query_5.sql" dialect="MySQL" />
@@ -23,6 +27,7 @@
     <file url="file://$PROJECT_DIR$/apolloconfigdb.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/apolloportaldb.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/mysql.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/undolog.sql" dialect="MySQL" />
     <file url="file://$USER_HOME$/Downloads/apolloconfigdb.sql" dialect="MySQL" />
     <file url="file://$USER_HOME$/Downloads/apolloportaldb.sql" dialect="MySQL" />
     <file url="file://$USER_HOME$/Downloads/mysql.sql" dialect="MySQL" />

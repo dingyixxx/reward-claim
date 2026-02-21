@@ -101,3 +101,13 @@ jmeter测试配置的sentinel的qps流控规则和熔断降级规则是否生效
 
 skywalking追踪异步线程\restTemplate的http调用和dubbo调用
 ![img_11.png](img_11.png)
+
+
+seata不能回滚存储过程
+
+canal-server的rabbitMq模式
+![img_12.png](img_12.png)
+
+
+
+
