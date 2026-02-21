@@ -50,3 +50,19 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     cache-enabled: false
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+seata:
+  enabled: true
+  application-id: inventory-service
+  tx-service-group: default_tx_group
+  config:
+    type: file
+  registry:
+    type: file
+  service:
+    vgroup-mapping:
+      default_tx_group: default # 将事务组映射到 default 集群
+    grouplist:
+      default: 192.168.200.131:8091
+  data-source-proxy-mode: AT

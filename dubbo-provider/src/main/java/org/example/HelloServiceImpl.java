@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.entity.InventoryMovement;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.DubboService;
+import org.apache.seata.spring.annotation.GlobalTransactional;
 import org.example.mapper.InventoryMovementMapper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -33,7 +34,7 @@ public class HelloServiceImpl  extends ServiceImpl<InventoryMovementMapper, Inve
      * @param userId 用户ID
      * @param quantity 数量
      */
-    @Transactional(rollbackFor = Exception.class)
+    @GlobalTransactional(timeoutMills = 300000, name = "deduct-inventory-tx")
     public void updateInventory(Long orderId, String orderNo, String productName, Long userId, Integer quantity) {
         try {
             log.info("开始更新库存: 订单ID={}, 订单号={}, 商品={}, 用户={}, 数量={}",

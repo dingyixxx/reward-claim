@@ -17,6 +17,9 @@
             <name qname="apolloconfigdb" />
             <name qname="apolloportaldb" />
             <name qname="order_db" />
+            <name qname="seata" />
+            <name qname="seata_db_20260220" />
+            <name qname="seata_demo" />
           </node>
         </introspection-scope>
       </schema-mapping>

@@ -5,24 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="add dubbo dynamic change service weight">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/entity/TestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/mapper/InventoryMovementMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/service/SeataOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1-controller/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-api/src/main/java/org/example/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-api/src/main/java/org/example/HelloService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/HelloServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/ProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/org/example/ProviderApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/Module2ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/Module2ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/entity/InventoryMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/entity/InventoryMovement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/mapper/InventoryMovementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/mapper/InventoryMovementMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/src/main/java/module2consumer/service/InventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sharding-elastic-job/src/main/java/org/example/ElasticApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sharding-elastic-job/src/main/java/org/example/ElasticApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +118,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/P72/Desktop/reward-claim/dubbo-provider/src/main/java/org/example",
+    "last_opened_file_path": "C:/Users/P72/Desktop/reward-claim/module1-controller/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -143,11 +144,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\P72\Desktop\reward-claim\dubbo-provider\src\main\java\org\example" />
-      <recent name="C:\Users\P72\Desktop\reward-claim" />
-      <recent name="C:\Users\P72\Desktop\reward-claim\module2-consumer\src\main\resources" />
-      <recent name="C:\Users\P72\Desktop\reward-claim\module2-consumer\src\main\java" />
       <recent name="C:\Users\P72\Desktop\reward-claim\module1-controller\src\main\resources" />
+      <recent name="C:\Users\P72\Desktop\reward-claim\dubbo-provider\src\main\resources" />
+      <recent name="C:\Users\P72\Desktop\reward-claim" />
+      <recent name="C:\Users\P72\Desktop\reward-claim\dubbo-provider\src\main\java\org\example" />
+      <recent name="C:\Users\P72\Desktop\reward-claim\module2-consumer\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example" />
@@ -425,7 +426,7 @@
       <workItem from="1770736167403" duration="199000" />
       <workItem from="1770736391317" duration="224000" />
       <workItem from="1770736647323" duration="1240000" />
-      <workItem from="1770819943782" duration="53300000" />
+      <workItem from="1770819943782" duration="65708000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>

@@ -7,6 +7,9 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import module1controller.entity.Order;
 import module1controller.mapper.OrderMapper;
+import org.apache.dubbo.config.annotation.DubboReference;
+import org.apache.seata.spring.annotation.GlobalTransactional;
+import org.example.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 @Slf4j
@@ -259,4 +263,5 @@ public class OrderService extends ServiceImpl<OrderMapper, Order> {
         // 使用自定义SQL添加随机睡眠
         return orderMapper.selectByIdWithSleep(id);
     }
+
 }

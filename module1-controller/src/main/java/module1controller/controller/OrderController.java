@@ -7,7 +7,9 @@ import module1controller.entity.Order;
 import module1controller.service.OrderService;
 import module1controller.service.RabbitMQProducerService;
 import module1controller.service.RedisService;
+import module1controller.service.SeataOrderService;
 import org.apache.dubbo.config.annotation.DubboReference;
+import org.apache.seata.spring.annotation.GlobalTransactional;
 import org.apache.skywalking.apm.toolkit.trace.*;
 import org.example.HelloService;
 import org.springframework.amqp.core.Message;
@@ -40,13 +42,14 @@ public class OrderController {
     private OrderService orderService;
 
     @Autowired
+    private SeataOrderService seataOrderService;
+
+    @Autowired
     private RedisService redisService;
 
     @Autowired
     private RabbitMQProducerService rabbitMQProducerService;
 
-    @DubboReference(version = "1.0.0", loadbalance = "random", group = "dingyi") // 支持权重
-    private HelloService helloService;
 
 
     @Value("${key:defaultkey100}")
@@ -96,56 +99,19 @@ public class OrderController {
 
 
     @PostMapping("/test/seata-create")
-    public Map<String, Object> createTestOrderSeata() {
+    public Map<String, Object> createTestOrderSeata() throws Exception {
         System.out.println("=== 测试Seata分布式事务 ===");
 
         Map<String, Object> result = new HashMap<>();
         Map<String, Object> operations = new HashMap<>();
+        System.out.println("=== 开始完整测试流程 ===");
 
-        try {
-            System.out.println("=== 开始完整测试流程 ===");
+        // 1. DB 写操作 - 创建订单
+        System.out.println("--- 1. 创建订单 (DB写) ---");
+        Order testOrder = new Order();
+        // 让Service生成随机数据
+        seataOrderService.createOrderWithSeata(testOrder,operations,result);
 
-            // 1. DB 写操作 - 创建订单
-            System.out.println("--- 1. 创建订单 (DB写) ---");
-            Order testOrder = new Order();
-            // 让Service生成随机数据
-            Order createdOrder = orderService.createOrderWithSleep(testOrder);
-            operations.put("1_db_write", Map.of(
-                    "success", true,
-                    "message", "订单创建成功",
-                    "order_id", createdOrder.getId(),
-                    "order_no", createdOrder.getOrderNo(),
-                    "product_name", createdOrder.getProductName(),
-                    "price", createdOrder.getPrice(),
-                    "quantity", createdOrder.getQuantity()
-            ));
-            System.out.println("订单创建成功: " + createdOrder.getOrderNo());
-
-
-            helloService.updateInventory(createdOrder.getId(), createdOrder.getOrderNo(), createdOrder.getProductName(), createdOrder.getUserId(), createdOrder.getQuantity());
-            log.info("更新库存成功: 订单ID={}, 订单号={}, 商品名称={}, 用户ID={}, 数量={}", createdOrder.getId(), createdOrder.getOrderNo(), createdOrder.getProductName(), createdOrder.getUserId(), createdOrder.getQuantity());
-            // 构建最终结果
-            result.put("success", true);
-            result.put("message", "完整测试流程执行成功");
-            result.put("operations", operations);
-            result.put("summary", Map.of(
-                    "total_operations", 7,
-                    "successful_operations", operations.size(),
-                    "test_order_id", createdOrder.getId(),
-                    "test_order_no", createdOrder.getOrderNo(),
-                    "test_product", createdOrder.getProductName(),
-                    "test_amount", createdOrder.getTotalAmount()
-            ));
-
-            System.out.println("=== 完整测试流程完成 ===");
-
-        } catch (Exception e) {
-            System.err.println("完整测试流程异常: " + e.getMessage());
-            e.printStackTrace();
-            result.put("success", false);
-            result.put("message", "完整测试流程执行失败: " + e.getMessage());
-            result.put("operations", operations);
-        }
         return result;
     }
 
