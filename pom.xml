@@ -24,6 +24,7 @@
         <module>module1-controller</module>
         <module>module2-consumer</module>
         <module>canal-tcp-client-listener</module>
+        <module>sharding-hourly-test</module>
     </modules>
 
 
@@ -33,12 +34,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 <!--        <spring.boot.version>3.1.5</spring.boot.version>-->
         <spring.boot.version>2.7.18</spring.boot.version>
-        <snakeyaml.version>1.30</snakeyaml.version>
-<!--        2.7.18-->
+        <snakeyaml.version>1.33</snakeyaml.version>
         <spring.cloud.version>2021.0.8</spring.cloud.version>
         <openfeign.version>4.0.0</openfeign.version>
         <nacos.version>2022.0.0.0</nacos.version>
         <sentinel.version>2022.0.0.0</sentinel.version>
+        <shardingsphere.version>5.1.2</shardingsphere.version>
+        <druid.version>1.2.20</druid.version>
+        <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
+        <jackson.version>2.13.4</jackson.version>
     </properties>
 
     <parent>
@@ -60,6 +64,29 @@
             </dependency>
 
 
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>2.7.18</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-aop</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>2.7.18</version>
+            </dependency>
+
+
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring.boot.version}</version>
+                <scope>test</scope>
+            </dependency>
 
             <!-- Spring Cloud Dependencies -->
             <dependency>
@@ -101,12 +128,7 @@
                 <artifactId>spring-cloud-starter-openfeign</artifactId>
                 <version>${openfeign.version}</version>
             </dependency>
-            <!-- Apache Commons Lang -->
-            <dependency>
-                <groupId>commons-lang</groupId>
-                <artifactId>commons-lang</artifactId>
-                <version>2.6</version>
-            </dependency>
+
             <dependency>
                 <groupId>io.r2dbc</groupId>
                 <artifactId>r2dbc-spi</artifactId>
@@ -118,7 +140,18 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jdbc</artifactId>
-                <version>6.0.13</version>
+                <version>5.3.20</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-jdbc-core-spring-boot-starter</artifactId>
+                <version>${shardingsphere.version}</version>
+<!--                <exclusions>-->
+<!--                    <exclusion>-->
+<!--                        <groupId>org.yaml</groupId>-->
+<!--                        <artifactId>snakeyaml</artifactId>-->
+<!--                    </exclusion>-->
+<!--                </exclusions>-->
             </dependency>
 
             <!-- MySQL Driver -->
@@ -126,6 +159,11 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>8.0.33</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.shardingsphere.elasticjob</groupId>
@@ -138,10 +176,11 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+
             <dependency>
                 <groupId>org.yaml</groupId>
                 <artifactId>snakeyaml</artifactId>
-                <version>2.2</version> <!-- Spring Boot 2.7.18 兼容版本 -->
+                <version>${snakeyaml.version}</version> <!-- Spring Boot 2.7.18 兼容版本 -->
             </dependency>
             <!-- FastJSON -->
             <dependency>
@@ -167,6 +206,11 @@
                 <version>0.11.5</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+            </dependency>
 
 
             <!-- MyBatis -->
@@ -175,17 +219,8 @@
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version> 2.3.1</version>
             </dependency>
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
-                <version>3.5.3.1</version>
-            </dependency>
 
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>2.7.18</version>
-            </dependency>
+
             <dependency>
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-x-discovery</artifactId>
@@ -194,8 +229,13 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <scope>provided</scope>
                 <version>1.18.38</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.8.22</version>
             </dependency>
             <!-- pom.xml -->
             <dependency>
@@ -215,11 +255,6 @@
                 <artifactId>dubbo-configcenter-zookeeper</artifactId>
                 <version>3.2.14</version> <!-- 与你的 dubbo 版本一致 -->
             </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-redis</artifactId>
-            </dependency>
-
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -247,11 +282,6 @@
                 <artifactId>commons-codec</artifactId>
                 <version>1.11</version>
             </dependency>
-            <dependency>
-                <groupId>com.ctrip.framework.apollo</groupId>
-                <artifactId>apollo-client</artifactId>
-                <version>2.1.0</version>
-            </dependency>
             <!-- Apollo配置中心客户端 -->
             <dependency>
                 <groupId>com.ctrip.framework.apollo</groupId>
@@ -259,14 +289,14 @@
                 <version>2.1.0</version>
             </dependency>
             <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-classic</artifactId>
-                <version>1.2.11</version>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-annotation</artifactId>
-                <version>3.5.6</version>
+                <version>${mybatis-plus.version}</version>
                 <scope>compile</scope>
             </dependency>
             <dependency>
@@ -286,18 +316,23 @@
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>2.13.4</version>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-core</artifactId>
-                <version>2.13.4</version>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
-                <version>2.13.4</version>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>

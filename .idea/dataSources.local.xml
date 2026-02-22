@@ -14,9 +14,8 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="apolloconfigdb" />
-            <name qname="apolloportaldb" />
             <name qname="order_db" />
+            <name qname="sharding_db" />
             <name qname="test_db" />
           </node>
         </introspection-scope>
@@ -68,6 +67,7 @@
             <name qname="inventory_db" />
             <name qname="test_db" />
             <name qname="db01" />
+            <name qname="sharding_db" />
           </node>
         </introspection-scope>
       </schema-mapping>

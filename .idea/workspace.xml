@@ -5,12 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="add dubbo dynamic change service weight">
-      <change afterPath="$PROJECT_DIR$/canal-tcp-client-listener/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/canal-tcp-client-listener/src/main/java/CanalTcpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/ShardingHourlyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/algorithm/HourlyShardingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/test/java/com/example/sharding/ShardingHourlyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/award-service/src/main/java/com/example/AwardServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/src/main/java/com/example/AwardServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sharding-elastic-job/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/application.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +83,11 @@
   "keyToString": {
     "Application.CanalTcpTest.executor": "Debug",
     "Application.ElasticApplication.executor": "Debug",
+    "JUnit.ShardingHourlyTest.test1905.executor": "Run",
+    "JUnit.ShardingHourlyTest.test2059.executor": "Run",
+    "JUnit.ShardingHourlyTest.test2100.executor": "Run",
+    "JUnit.ShardingHourlyTest.testAllThreeTimes.executor": "Run",
+    "JUnit.ShardingHourlyTest.testTimeRangeQuery.executor": "Run",
     "Maven.common [clean].executor": "Run",
     "Maven.common [install].executor": "Run",
     "Maven.common [package].executor": "Run",
@@ -73,7 +102,10 @@
     "Maven.module2-consumer [package].executor": "Run",
     "Maven.reward-claim [clean].executor": "Run",
     "Maven.reward-claim [compile].executor": "Run",
+    "Maven.reward-claim [dependency:get...].executor": "Run",
     "Maven.reward-claim [dependency:tree,-Dverbose...].executor": "Run",
+    "Maven.reward-claim [dependency:tree...].executor": "Run",
+    "Maven.reward-claim [install].executor": "Run",
     "Maven.sharding-elastic-job [clean].executor": "Run",
     "Maven.sharding-elastic-job [compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -149,6 +181,11 @@
     <option name="myCommands">
       <command value="mvn dependency:tree" />
       <command value="mvn dependency:tree -Dverbose | findstr &quot;snakeyaml&quot;" />
+      <command value="mvn dependency:tree -Dincludes=org.yaml:snakeyaml" />
+      <command value="mvn dependency:get -Dartifact=org.apache.shardingsphere:shardingsphere-jdbc-core-spring-boot-starter:5.4.1 -U " />
+      <command value="mvn dependency:get -Dartifact=org.apache.shardingsphere:shardingsphere-jdbc-core-spring-boot-starter:5.4.0 -U " />
+      <command value="mvn dependency:get -Dartifact=org.apache.shardingsphere:shardingsphere-jdbc-core-spring-boot-starter:5.3.2 -U " />
+      <command value="mvn dependency:get -Dartifact=org.apache.shardingsphere:shardingsphere-jdbc-core-spring-boot-starter:5.1.2 -U" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -163,13 +200,6 @@
     </option>
     <option name="configurationStatuses">
       <map>
-        <entry key="Application">
-          <value>
-            <map>
-              <entry key="CanalTcpTest" value="STOPPED" />
-            </map>
-          </value>
-        </entry>
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
@@ -184,28 +214,88 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CanalTcpTest">
-    <configuration name="CanalTcpTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CanalTcpTest" />
-      <module name="canal-tcp-client-listener" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElasticApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.ElasticApplication" />
-      <module name="sharding-elastic-job" />
+  <component name="RunManager" selected="JUnit.ShardingHourlyTest.testAggregation">
+    <configuration name="ShardingHourlyTest.test2059" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-hourly-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.entity.*" />
+          <option name="PATTERN" value="com.example.sharding.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.sharding" />
+      <option name="MAIN_CLASS_NAME" value="com.example.sharding.ShardingHourlyTest" />
+      <option name="METHOD_NAME" value="test2059" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AwardServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ShardingHourlyTest.test2100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-hourly-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sharding.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.sharding" />
+      <option name="MAIN_CLASS_NAME" value="com.example.sharding.ShardingHourlyTest" />
+      <option name="METHOD_NAME" value="test2100" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShardingHourlyTest.testAggregation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-hourly-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sharding.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.sharding" />
+      <option name="MAIN_CLASS_NAME" value="com.example.sharding.ShardingHourlyTest" />
+      <option name="METHOD_NAME" value="testAggregation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShardingHourlyTest.testAllThreeTimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-hourly-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sharding.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.sharding" />
+      <option name="MAIN_CLASS_NAME" value="com.example.sharding.ShardingHourlyTest" />
+      <option name="METHOD_NAME" value="testAllThreeTimes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShardingHourlyTest.testTimeRangeQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-hourly-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sharding.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.sharding" />
+      <option name="MAIN_CLASS_NAME" value="com.example.sharding.ShardingHourlyTest" />
+      <option name="METHOD_NAME" value="testTimeRangeQuery" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AwardServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="award-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.AwardServiceApplication" />
       <method v="2">
@@ -215,19 +305,6 @@
     <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="dubbo-consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.ConsumerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElasticApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="sharding-elastic-job" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.ElasticApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -288,6 +365,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Module1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="module1-controller" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="module1controller.Module1Application" />
@@ -300,19 +384,6 @@
       <module name="module2-consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="module2consumer.Module2ConsumerApplication" />
       <option name="VM_PARAMETERS" value="-javaagent:C:\Users\P72\Downloads\skywalking-agent\skywalking-agent.jar -Dskywalking.agent.service_name=consumer-app -Dskywalking.collector.backend_service=192.168.200.131:11800" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="order-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.OrderApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -333,6 +404,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShardingHourlyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sharding-hourly-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.sharding.ShardingHourlyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserApplication -weight3 51604" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
       <module name="user-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.UserApplication" />
@@ -349,10 +427,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CanalTcpTest" />
-      <item itemvalue="Application.ElasticApplication" />
+      <item itemvalue="JUnit.ShardingHourlyTest.test2059" />
+      <item itemvalue="JUnit.ShardingHourlyTest.test2100" />
+      <item itemvalue="JUnit.ShardingHourlyTest.testAggregation" />
+      <item itemvalue="JUnit.ShardingHourlyTest.testAllThreeTimes" />
+      <item itemvalue="JUnit.ShardingHourlyTest.testTimeRangeQuery" />
       <item itemvalue="Spring Boot.Module1Application" />
       <item itemvalue="Spring Boot.Module2ConsumerApplication" />
+      <item itemvalue="Spring Boot.ShardingHourlyApplication" />
       <item itemvalue="Spring Boot.ConsumerApplication" />
       <item itemvalue="Spring Boot.ProviderApplication" />
       <item itemvalue="Spring Boot.ProviderApplication 20882" />
@@ -362,17 +444,16 @@
       <item itemvalue="Spring Boot.ElasticApplication=8093" />
       <item itemvalue="Spring Boot.ElasticApplication=8094" />
       <item itemvalue="Spring Boot.ElasticApplication=8095" />
-      <item itemvalue="Spring Boot.ElasticApplication" />
-      <item itemvalue="Spring Boot.OrderApplication" />
       <item itemvalue="Spring Boot.AwardServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CanalTcpTest" />
-        <item itemvalue="Spring Boot.ElasticApplication" />
-        <item itemvalue="Application.ElasticApplication" />
-        <item itemvalue="Spring Boot.OrderApplication" />
-        <item itemvalue="Spring Boot.AwardServiceApplication" />
+        <item itemvalue="JUnit.ShardingHourlyTest.testAggregation" />
+        <item itemvalue="JUnit.ShardingHourlyTest.testTimeRangeQuery" />
+        <item itemvalue="JUnit.ShardingHourlyTest.testAllThreeTimes" />
+        <item itemvalue="JUnit.ShardingHourlyTest.test2100" />
+        <item itemvalue="JUnit.ShardingHourlyTest.test2059" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +502,7 @@
       <workItem from="1770736167403" duration="199000" />
       <workItem from="1770736391317" duration="224000" />
       <workItem from="1770736647323" duration="1240000" />
-      <workItem from="1770819943782" duration="80114000" />
+      <workItem from="1770819943782" duration="101359000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>
@@ -548,6 +629,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

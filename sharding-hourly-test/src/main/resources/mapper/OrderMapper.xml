@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.sharding.mapper.OrderMapper">
+
+    <!-- ==================== 结果映射 ==================== -->
+    <resultMap id="BaseResultMap" type="com.example.sharding.entity.Order">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="order_no" property="orderNo" jdbcType="VARCHAR"/>
+        <result column="user_id" property="userId" jdbcType="BIGINT"/>
+        <result column="amount" property="amount" jdbcType="DECIMAL"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!-- ==================== 基础列 ==================== -->
+    <sql id="Base_Column_List">
+        id, order_no, user_id, amount, status, create_time, update_time
+    </sql>
+
+    <!-- ==================== 根据用户 ID 查询 ==================== -->
+    <!-- ⚠️ 接口中没有 @Select 注解，必须在 XML 中定义 -->
+    <select id="selectByUserId" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_order
+        WHERE user_id = #{userId}
+        ORDER BY create_time DESC
+    </select>
+
+    <!-- ==================== 根据订单号查询 ==================== -->
+    <!-- ⚠️ 接口中没有 @Select 注解，必须在 XML 中定义 -->
+    <select id="selectByOrderNo" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_order
+        WHERE order_no = #{orderNo}
+        LIMIT 1
+    </select>
+
+    <!-- ==================== 其他方法说明 ==================== -->
+    <!--
+    以下方法已有 @Select 注解，不需要在 XML 中重复定义:
+    - selectByTimeRange: @Select 注解
+    - sumAmount: @Select 注解
+    - totalCount: @Select 注解
+    - countByHour: @Select 注解
+
+    BaseMapper 的基础 CRUD 方法也不需要定义:
+    - insert, update, delete, selectById, selectList 等
+    -->
+
+</mapper>

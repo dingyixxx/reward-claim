@@ -113,3 +113,6 @@ canal-server的rabbitMq模式
 canal的tcp模式
 
 ![img_13.png](img_13.png)
+
+sharding JDBC with snowflake id generator
+![img_14.png](img_14.png)

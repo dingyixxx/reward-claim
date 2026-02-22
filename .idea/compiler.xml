@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="sharding-hourly-test" />
         <module name="canal-tcp-client-listener" />
         <module name="module2-consumer" />
         <module name="user-service" />
@@ -24,6 +25,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="orders-service" target="17" />
+      <module name="sharding-test" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -40,6 +42,8 @@
       <module name="module2-consumer" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="sharding-elastic-job" options="-parameters" />
+      <module name="sharding-hourly-test" options="-parameters" />
+      <module name="sharding-test" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>
