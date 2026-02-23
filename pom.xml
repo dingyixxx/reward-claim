@@ -25,6 +25,7 @@
         <module>module2-consumer</module>
         <module>canal-tcp-client-listener</module>
         <module>sharding-hourly-test</module>
+        <module>sharding-database-test</module>
     </modules>
 
 

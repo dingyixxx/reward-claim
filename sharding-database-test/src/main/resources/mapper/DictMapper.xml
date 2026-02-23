@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.sharding.mapper.DictMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="BaseResultMap" type="com.example.sharding.entity.Dict">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="dict_code" property="dictCode" jdbcType="VARCHAR"/>
+        <result column="dict_name" property="dictName" jdbcType="VARCHAR"/>
+        <result column="dict_value" property="dictValue" jdbcType="VARCHAR"/>
+        <result column="remark" property="remark" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!-- 基础列 -->
+    <sql id="Base_Column_List">
+        id, dict_code, dict_name, dict_value, remark, create_time
+    </sql>
+
+
+
+    <!-- 根据字典编码查询（XML 方式） -->
+    <select id="selectByDictCode" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_dict
+        WHERE dict_code = #{dictCode}
+    </select>
+
+    <!-- 根据字典名称模糊查询（XML 方式） -->
+    <select id="selectByDictName" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_dict
+        WHERE dict_name LIKE CONCAT('%', #{dictName}, '%')
+        ORDER BY create_time DESC
+    </select>
+
+    <!-- 动态查询条件 -->
+    <select id="selectByCondition" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_dict
+        <where>
+            <if test="dictCode != null and dictCode != ''">
+                AND dict_code = #{dictCode}
+            </if>
+            <if test="dictName != null and dictName != ''">
+                AND dict_name LIKE CONCAT('%', #{dictName}, '%')
+            </if>
+            <if test="remark != null and remark != ''">
+                AND remark LIKE CONCAT('%', #{remark}, '%')
+            </if>
+        </where>
+        ORDER BY create_time DESC
+    </select>
+
+</mapper>

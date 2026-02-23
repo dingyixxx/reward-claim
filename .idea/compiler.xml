@@ -11,6 +11,7 @@
         <module name="canal-tcp-client-listener" />
         <module name="module2-consumer" />
         <module name="user-service" />
+        <module name="sharding-database-test" />
         <module name="award-service" />
         <module name="feign-api" />
         <module name="common" />
@@ -41,6 +42,7 @@
       <module name="module1-controller" options="-parameters" />
       <module name="module2-consumer" options="-parameters" />
       <module name="order-service" options="-parameters" />
+      <module name="sharding-database-test" options="-parameters" />
       <module name="sharding-elastic-job" options="-parameters" />
       <module name="sharding-hourly-test" options="-parameters" />
       <module name="sharding-test" options="-parameters" />

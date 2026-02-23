@@ -5,36 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="add dubbo dynamic change service weight">
-      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/ShardingHourlyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/algorithm/HourlyShardingAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/java/com/example/sharding/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-hourly-test/src/test/java/com/example/sharding/ShardingHourlyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/ShardingDatabaseOrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/entity/Dict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/mapper/DictMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/service/DictService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/resources/mapper/DictMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/resources/master.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/resources/slave.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/test/java/com/example/sharding/BroadcastTableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/test/java/com/example/sharding/ReadWriteSplittingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/test/java/com/example/sharding/ShardingFullTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/award-service/src/main/java/com/example/AwardServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/award-service/src/main/java/com/example/AwardServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/module1-controller/src/main/java/module1controller/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2-consumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sharding-elastic-job/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sharding-hourly-test/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +49,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="ReadWriteSplittingTest.testReadWriteSplitting" />
+    </enabled-run-configurations>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -83,9 +85,14 @@
   "keyToString": {
     "Application.CanalTcpTest.executor": "Debug",
     "Application.ElasticApplication.executor": "Debug",
+    "JUnit.BroadcastTableTest.testBroadcastTable.executor": "Run",
+    "JUnit.BroadcastTableTest.testBroadcastTableJoin.executor": "Run",
+    "JUnit.ReadWriteSplittingTest.testReadWriteSplitting.executor": "Debug",
+    "JUnit.ShardingFullTest.testFull.executor": "Run",
     "JUnit.ShardingHourlyTest.test1905.executor": "Run",
     "JUnit.ShardingHourlyTest.test2059.executor": "Run",
     "JUnit.ShardingHourlyTest.test2100.executor": "Run",
+    "JUnit.ShardingHourlyTest.testAggregation.executor": "Run",
     "JUnit.ShardingHourlyTest.testAllThreeTimes.executor": "Run",
     "JUnit.ShardingHourlyTest.testTimeRangeQuery.executor": "Run",
     "Maven.common [clean].executor": "Run",
@@ -106,6 +113,7 @@
     "Maven.reward-claim [dependency:tree,-Dverbose...].executor": "Run",
     "Maven.reward-claim [dependency:tree...].executor": "Run",
     "Maven.reward-claim [install].executor": "Run",
+    "Maven.sharding-database-test [clean].executor": "Run",
     "Maven.sharding-elastic-job [clean].executor": "Run",
     "Maven.sharding-elastic-job [compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -134,6 +142,7 @@
     "Spring Boot.UserApplication -weight3 51604.executor": "Debug",
     "Spring Boot.UserApplication-51603.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
@@ -171,6 +180,7 @@
       <recent name="C:\Users\P72\Desktop\reward-claim\module2-consumer\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.sharding" />
       <recent name="org.example" />
       <recent name="com.example.client" />
       <recent name="org.example.entity" />
@@ -214,9 +224,9 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShardingHourlyTest.testAggregation">
-    <configuration name="ShardingHourlyTest.test2059" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sharding-hourly-test" />
+  <component name="RunManager" selected="JUnit.ReadWriteSplittingTest.testReadWriteSplitting">
+    <configuration name="BroadcastTableTest.testBroadcastTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-database-test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.sharding.*" />
@@ -224,15 +234,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.sharding" />
-      <option name="MAIN_CLASS_NAME" value="com.example.sharding.ShardingHourlyTest" />
-      <option name="METHOD_NAME" value="test2059" />
+      <option name="MAIN_CLASS_NAME" value="com.example.sharding.BroadcastTableTest" />
+      <option name="METHOD_NAME" value="testBroadcastTable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShardingHourlyTest.test2100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sharding-hourly-test" />
+    <configuration name="BroadcastTableTest.testBroadcastTableJoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-database-test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.sharding.*" />
@@ -240,8 +250,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.sharding" />
-      <option name="MAIN_CLASS_NAME" value="com.example.sharding.ShardingHourlyTest" />
-      <option name="METHOD_NAME" value="test2100" />
+      <option name="MAIN_CLASS_NAME" value="com.example.sharding.BroadcastTableTest" />
+      <option name="METHOD_NAME" value="testBroadcastTableJoin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadWriteSplittingTest.testReadWriteSplitting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-database-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sharding.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.sharding" />
+      <option name="MAIN_CLASS_NAME" value="com.example.sharding.ReadWriteSplittingTest" />
+      <option name="METHOD_NAME" value="testReadWriteSplitting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShardingFullTest.testFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sharding-database-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sharding.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.sharding" />
+      <option name="MAIN_CLASS_NAME" value="com.example.sharding.ShardingFullTest" />
+      <option name="METHOD_NAME" value="testFull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -258,38 +300,6 @@
       <option name="PACKAGE_NAME" value="com.example.sharding" />
       <option name="MAIN_CLASS_NAME" value="com.example.sharding.ShardingHourlyTest" />
       <option name="METHOD_NAME" value="testAggregation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShardingHourlyTest.testAllThreeTimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sharding-hourly-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.sharding.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.sharding" />
-      <option name="MAIN_CLASS_NAME" value="com.example.sharding.ShardingHourlyTest" />
-      <option name="METHOD_NAME" value="testAllThreeTimes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShardingHourlyTest.testTimeRangeQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sharding-hourly-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.sharding.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.sharding" />
-      <option name="MAIN_CLASS_NAME" value="com.example.sharding.ShardingHourlyTest" />
-      <option name="METHOD_NAME" value="testTimeRangeQuery" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -388,6 +398,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProviderApplication 20882" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="dubbo-provider" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.ProviderApplication" />
@@ -427,11 +444,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ShardingHourlyTest.test2059" />
-      <item itemvalue="JUnit.ShardingHourlyTest.test2100" />
+      <item itemvalue="JUnit.BroadcastTableTest.testBroadcastTable" />
+      <item itemvalue="JUnit.BroadcastTableTest.testBroadcastTableJoin" />
+      <item itemvalue="JUnit.ReadWriteSplittingTest.testReadWriteSplitting" />
+      <item itemvalue="JUnit.ShardingFullTest.testFull" />
       <item itemvalue="JUnit.ShardingHourlyTest.testAggregation" />
-      <item itemvalue="JUnit.ShardingHourlyTest.testAllThreeTimes" />
-      <item itemvalue="JUnit.ShardingHourlyTest.testTimeRangeQuery" />
       <item itemvalue="Spring Boot.Module1Application" />
       <item itemvalue="Spring Boot.Module2ConsumerApplication" />
       <item itemvalue="Spring Boot.ShardingHourlyApplication" />
@@ -444,16 +461,17 @@
       <item itemvalue="Spring Boot.ElasticApplication=8093" />
       <item itemvalue="Spring Boot.ElasticApplication=8094" />
       <item itemvalue="Spring Boot.ElasticApplication=8095" />
+      <item itemvalue="Spring Boot.OrderApplication" />
       <item itemvalue="Spring Boot.AwardServiceApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReadWriteSplittingTest.testReadWriteSplitting" />
+        <item itemvalue="JUnit.ShardingFullTest.testFull" />
+        <item itemvalue="JUnit.BroadcastTableTest.testBroadcastTable" />
+        <item itemvalue="JUnit.BroadcastTableTest.testBroadcastTableJoin" />
         <item itemvalue="JUnit.ShardingHourlyTest.testAggregation" />
-        <item itemvalue="JUnit.ShardingHourlyTest.testTimeRangeQuery" />
-        <item itemvalue="JUnit.ShardingHourlyTest.testAllThreeTimes" />
-        <item itemvalue="JUnit.ShardingHourlyTest.test2100" />
-        <item itemvalue="JUnit.ShardingHourlyTest.test2059" />
       </list>
     </recent_temporary>
   </component>
@@ -502,7 +520,7 @@
       <workItem from="1770736167403" duration="199000" />
       <workItem from="1770736391317" duration="224000" />
       <workItem from="1770736647323" duration="1240000" />
-      <workItem from="1770819943782" duration="101359000" />
+      <workItem from="1770819943782" duration="116982000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>

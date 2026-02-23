@@ -1,0 +1,86 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: sharding-database-test
+
+  shardingsphere:
+    datasource:
+      names: ds_primary,ds_replica
+
+      ds_primary:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://192.168.0.111:3306/order_db_01?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+        username: root
+        password: root
+
+      ds_replica:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://192.168.0.111:3307/order_db_01?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+        username: root
+        password: root
+
+    rules:
+#      读写分离 vs 分片 (分片写入\查\广播), 配置不能同时生效, 先测试 分片, 再测试 读写分离
+      readwrite-splitting:
+        load-balancers:
+          round_robin:
+            type: ROUND_ROBIN
+
+        data-sources:
+          rw_group:
+            type: Static
+            props:
+              # 主库数据源名称
+              write-data-source-name: ds_primary
+              # 从库数据源名称列表，多个用逗号分隔（注意：也可以使用列表，但根据版本，建议先使用字符串）
+              read-data-source-names: ds_replica   # 如果是多个，比如: ds_slave0,ds_slave1
+              # 负载均衡算法名称（可选）
+              load-balancer-name: round_robin
+
+
+
+#      sharding:
+#        tables:
+#          t_order:
+#            actual-data-nodes: ds_primary.t_order,ds_replica.t_order
+#            database-strategy:
+#              standard:
+#                sharding-column: user_id
+#                sharding-algorithm-name: database-sharding
+#            key-generate-strategy:
+#              column: id
+#              key-generator-name: snowflake
+#
+#        sharding-algorithms:
+#          database-sharding:
+#            type: INLINE
+#            props:
+#              algorithm-expression: "ds_$->{user_id % 2 == 0 ? 'primary' : 'replica'}"
+#
+#        key-generators:
+#          snowflake:
+#            type: SNOWFLAKE
+#            props:
+#              worker-id: 1
+#
+#        broadcast-tables: t_dict
+
+    props:
+      sql-show: true
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: com.example.sharding.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    com.example.sharding: debug
+    org.apache.shardingsphere: debug
+    com.baomidou.mybatisplus: debug

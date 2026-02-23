@@ -116,3 +116,6 @@ canal的tcp模式
 
 sharding JDBC with snowflake id generator
 ![img_14.png](img_14.png)
+
+sharding databases instead of sharding tables
+![img_15.png](img_15.png)
