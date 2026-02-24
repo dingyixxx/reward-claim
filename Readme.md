@@ -119,3 +119,8 @@ sharding JDBC with snowflake id generator
 
 sharding databases instead of sharding tables
 ![img_15.png](img_15.png)
+
+
+use shardingSphere proxy to do sharding and read-write splitting
+![img_16.png](img_16.png)
+![img_17.png](img_17.png)

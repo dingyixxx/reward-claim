@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="add dubbo dynamic change service weight">
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/ShardingDatabaseOrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/entity/Dict.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/mapper/DictMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/service/DictService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/java/com/example/sharding/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/resources/mapper/DictMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/resources/master.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/main/resources/slave.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/test/java/com/example/sharding/BroadcastTableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/test/java/com/example/sharding/ReadWriteSplittingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharding-database-test/src/test/java/com/example/sharding/ShardingFullTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fa929af8-3d56-4a7d-9c89-5cf5fa366c71.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sharding-hourly-test/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sharding-hourly-test/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="581f5e3d-ed16-40fe-a97c-0dc2dbf892f2" name="Changes" comment="add dubbo dynamic change service weight" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,93 +53,93 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CanalTcpTest.executor": "Debug",
-    "Application.ElasticApplication.executor": "Debug",
-    "JUnit.BroadcastTableTest.testBroadcastTable.executor": "Run",
-    "JUnit.BroadcastTableTest.testBroadcastTableJoin.executor": "Run",
-    "JUnit.ReadWriteSplittingTest.testReadWriteSplitting.executor": "Debug",
-    "JUnit.ShardingFullTest.testFull.executor": "Run",
-    "JUnit.ShardingHourlyTest.test1905.executor": "Run",
-    "JUnit.ShardingHourlyTest.test2059.executor": "Run",
-    "JUnit.ShardingHourlyTest.test2100.executor": "Run",
-    "JUnit.ShardingHourlyTest.testAggregation.executor": "Run",
-    "JUnit.ShardingHourlyTest.testAllThreeTimes.executor": "Run",
-    "JUnit.ShardingHourlyTest.testTimeRangeQuery.executor": "Run",
-    "Maven.common [clean].executor": "Run",
-    "Maven.common [install].executor": "Run",
-    "Maven.common [package].executor": "Run",
-    "Maven.dubbo-api [clean].executor": "Run",
-    "Maven.dubbo-api [install].executor": "Run",
-    "Maven.dubbo-consumer [clean].executor": "Run",
-    "Maven.dubbo-provider [clean].executor": "Run",
-    "Maven.module1-controller [clean].executor": "Run",
-    "Maven.module1-controller [compile].executor": "Run",
-    "Maven.module1-controller [package].executor": "Run",
-    "Maven.module2-consumer [clean].executor": "Run",
-    "Maven.module2-consumer [package].executor": "Run",
-    "Maven.reward-claim [clean].executor": "Run",
-    "Maven.reward-claim [compile].executor": "Run",
-    "Maven.reward-claim [dependency:get...].executor": "Run",
-    "Maven.reward-claim [dependency:tree,-Dverbose...].executor": "Run",
-    "Maven.reward-claim [dependency:tree...].executor": "Run",
-    "Maven.reward-claim [install].executor": "Run",
-    "Maven.sharding-database-test [clean].executor": "Run",
-    "Maven.sharding-elastic-job [clean].executor": "Run",
-    "Maven.sharding-elastic-job [compile].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AwardServiceApplication.executor": "Debug",
-    "Spring Boot.ConsumerApplication.executor": "Debug",
-    "Spring Boot.ElasticApplication.executor": "Debug",
-    "Spring Boot.ElasticApplication=8092.executor": "Debug",
-    "Spring Boot.ElasticApplication=8093.executor": "Debug",
-    "Spring Boot.ElasticApplication=8094.executor": "Run",
-    "Spring Boot.GatewayApplication.executor": "Debug",
-    "Spring Boot.Module1Application.executor": "Debug",
-    "Spring Boot.Module2ConsumerApplication.executor": "Debug",
-    "Spring Boot.OrderApplication.executor": "Debug",
-    "Spring Boot.ProviderApplication 20881.executor": "Debug",
-    "Spring Boot.ProviderApplication 20882.executor": "Debug",
-    "Spring Boot.ProviderApplication.executor": "Debug",
-    "Spring Boot.UserApplication -weight3 51604.executor": "Debug",
-    "Spring Boot.UserApplication-51603.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/P72/Desktop/reward-claim/module1-controller/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15234375",
-    "project.structure.side.proportion": "0.4083045",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "6c65abcb753404408747d0e54568d401",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CanalTcpTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ElasticApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.BroadcastTableTest.testBroadcastTable.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BroadcastTableTest.testBroadcastTableJoin.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadWriteSplittingTest.testReadWriteSplitting.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ShardingFullTest.testFull.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShardingHourlyTest.test1905.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShardingHourlyTest.test2059.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShardingHourlyTest.test2100.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShardingHourlyTest.testAggregation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShardingHourlyTest.testAllThreeTimes.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShardingHourlyTest.testTimeRangeQuery.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.common [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.common [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.common [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dubbo-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dubbo-api [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dubbo-consumer [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dubbo-provider [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.module1-controller [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.module1-controller [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.module1-controller [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.module2-consumer [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.module2-consumer [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reward-claim [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reward-claim [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reward-claim [dependency:get...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reward-claim [dependency:tree,-Dverbose...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reward-claim [dependency:tree...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.reward-claim [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.sharding-database-test [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.sharding-elastic-job [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.sharding-elastic-job [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AwardServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ConsumerApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ElasticApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ElasticApplication=8092.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ElasticApplication=8093.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ElasticApplication=8094.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.Module1Application.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.Module2ConsumerApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.OrderApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ProviderApplication 20881.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ProviderApplication 20882.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ProviderApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.UserApplication -weight3 51604.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.UserApplication-51603.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/P72/Desktop/reward-claim/module1-controller/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15234375&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4083045&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6c65abcb753404408747d0e54568d401&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -520,7 +492,7 @@
       <workItem from="1770736167403" duration="199000" />
       <workItem from="1770736391317" duration="224000" />
       <workItem from="1770736647323" duration="1240000" />
-      <workItem from="1770819943782" duration="116982000" />
+      <workItem from="1770819943782" duration="117825000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1765634295387</created>
