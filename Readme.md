@@ -89,7 +89,8 @@ DNS1="192.168.22.2"
 
 jmeter测试配置的sentinel的qps流控规则和熔断降级规则是否生效
   
-
+elastic-job分片作业,分片的世界
+![img_18.png](img_18.png)
 
 动态修改dubbo服务权重
 ![img_8.png](img_8.png)
@@ -105,7 +106,7 @@ skywalking追踪异步线程\restTemplate的http调用和dubbo调用
 
 seata不能回滚存储过程
 
-canal-server的rabbitMq模式
+canal-server的rabbitMq模式,伪装成从节点
 ![img_12.png](img_12.png)
 
 
@@ -121,6 +122,6 @@ sharding databases instead of sharding tables
 ![img_15.png](img_15.png)
 
 
-use shardingSphere proxy to do sharding and read-write splitting
+use shardingSphere proxy to do sharding and read-write splitting,伪装成数据库
 ![img_16.png](img_16.png)
 ![img_17.png](img_17.png)
