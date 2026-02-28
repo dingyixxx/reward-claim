@@ -1,0 +1,13 @@
+server:
+  port: 8085
+
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: circular-dependency-test
+
+logging:
+  level:
+    com.example.circular: DEBUG
+    org.springframework.beans.factory.support: DEBUG

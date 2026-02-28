@@ -14,6 +14,7 @@
         <module name="sharding-database-test" />
         <module name="award-service" />
         <module name="feign-api" />
+        <module name="circular-dependency-test" />
         <module name="common" />
         <module name="gateway-service" />
         <module name="dubbo-provider" />
@@ -33,6 +34,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="award-service" options="-parameters" />
       <module name="canal-tcp-client-listener" options="-parameters" />
+      <module name="circular-dependency-test" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="dubbo-api" options="-parameters" />
       <module name="dubbo-consumer" options="-parameters" />
